@@ -30,7 +30,7 @@ const REFUND_POLICY_URL = '';
 const INQUIRY_SUPPORT_EMAIL = '';
 
 /// You can add help line number here for contact. It's demo number
-const HELP_LINE_NUMBER = '+15265897485';
+const HELP_LINE_NUMBER = '+967770948670';
 
 //Airtel Money Payments
 ///It Supports ["UGX", "NGN", "TZS", "KES", "RWF", "ZMW", "CFA", "XOF", "XAF", "CDF", "USD", "XAF", "SCR", "MGA", "MWK"]
