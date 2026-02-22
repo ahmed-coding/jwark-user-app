@@ -1,4 +1,4 @@
-package com.jwark.servicebooking
+package com.jwark.services
 
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.android.FlutterFragmentActivity
