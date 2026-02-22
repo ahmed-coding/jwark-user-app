@@ -503,16 +503,31 @@ class _ServiceDetailScreenState extends State<ServiceDetailScreen> with TickerPr
                   ],
                 ),
               ),
-              AppButton(
-                onTap: () {
-                  selectedPackage = null;
-                  bookNow(snap.data!);
-                },
-                color: context.primaryColor,
-                child: Text(language.lblBookNow, style: boldTextStyle(color: white)),
-                width: context.width(),
-                textColor: Colors.white,
-              ).paddingSymmetric(horizontal: 16.0, vertical: 10.0)
+              // إظهار زر الحجز فقط إذا لم تكن الخدمة مجانية
+              if (!snap.data!.serviceDetail!.isFreeService)
+                AppButton(
+                  onTap: () {
+                    selectedPackage = null;
+                    bookNow(snap.data!);
+                  },
+                  color: context.primaryColor,
+                  child: Text(language.lblBookNow, style: boldTextStyle(color: white)),
+                  width: context.width(),
+                  textColor: Colors.white,
+                ).paddingSymmetric(horizontal: 16.0, vertical: 10.0)
+              else
+                // إذا كانت الخدمة مجانية، اعرض رسالة توضيحية
+                Container(
+                  width: context.width(),
+                  margin: EdgeInsets.symmetric(horizontal: 16.0, vertical: 10.0),
+                  padding: EdgeInsets.all(16),
+                  decoration: boxDecorationDefault(color: context.cardColor),
+                  child: Text(
+                    language.contactAdmin, // أو يمكنك تخصيص نص آخر مثل "هذه الخدمة مجانية للاستفسار فقط"
+                    style: boldTextStyle(color: primaryColor),
+                    textAlign: TextAlign.center,
+                  ),
+                )
             ],
           ),
         );

@@ -253,6 +253,30 @@ class _BookServiceScreenState extends State<BookServiceScreen> {
 
   @override
   Widget build(BuildContext context) {
+    // إذا كانت الخدمة مجانية، اعرض رسالة فقط ولا تعرض نموذج الحجز
+    if (widget.data.serviceDetail!.isFreeService) {
+      return Scaffold(
+        appBar: appBarWidget(
+          widget.selectedPackage == null ? language.bookTheService : language.bookPackage,
+          textColor: Colors.white,
+          color: context.primaryColor,
+          backWidget: BackWidget(),
+        ),
+        body: Center(
+          child: Container(
+            margin: EdgeInsets.all(24),
+            padding: EdgeInsets.all(24),
+            decoration: boxDecorationDefault(color: context.cardColor),
+            child: Text(
+              language.contactAdmin, // أو نص مخصص مثل "هذه الخدمة مجانية للاستفسار فقط"
+              style: boldTextStyle(color: primaryColor, size: 18),
+              textAlign: TextAlign.center,
+            ),
+          ),
+        ),
+      );
+    }
+
     return Scaffold(
       appBar: appBarWidget(
         widget.selectedPackage == null ? language.bookTheService : language.bookPackage,
