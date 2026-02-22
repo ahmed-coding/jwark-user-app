@@ -143,7 +143,7 @@ class BookingDetailHandymanWidgetState extends State<BookingDetailHandymanWidget
                   UserData? user = await userService.getUserNull(email: widget.handymanData.email.validate());
                   if (user != null) {
                     Fluttertoast.cancel();
-                    isChattingAllow = widget.bookingDetail.status == BookingStatusKeys.complete || widget.bookingDetail.status == BookingStatusKeys.cancelled;
+                    isChattingAllow = true;
                     UserChatScreen(receiverUser: user, isChattingAllow: isChattingAllow).launch(context);
                   } else {
                     Fluttertoast.cancel();

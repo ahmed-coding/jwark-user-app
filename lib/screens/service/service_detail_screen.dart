@@ -13,6 +13,7 @@ import 'package:booking_system_flutter/network/rest_apis.dart';
 import 'package:booking_system_flutter/screens/booking/book_service_screen.dart';
 import 'package:booking_system_flutter/screens/booking/component/booking_detail_provider_widget.dart';
 import 'package:booking_system_flutter/screens/booking/provider_info_screen.dart';
+import 'package:booking_system_flutter/screens/chat/user_chat_screen.dart';
 import 'package:booking_system_flutter/screens/review/components/review_widget.dart';
 import 'package:booking_system_flutter/screens/review/rating_view_all_screen.dart';
 import 'package:booking_system_flutter/screens/service/component/related_service_component.dart';
@@ -527,7 +528,27 @@ class _ServiceDetailScreenState extends State<ServiceDetailScreen> with TickerPr
                     style: boldTextStyle(color: primaryColor),
                     textAlign: TextAlign.center,
                   ),
-                )
+                ),
+              // زر مراسلة مزود الخدمة دائماً
+              AppButton(
+                onTap: () async {
+                  UserData? provider = snap.data!.provider;
+                  if (provider != null) {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => UserChatScreen(receiverUser: provider, isChattingAllow: true),
+                      ),
+                    );
+                  } else {
+                    toast(language.contactAdmin);
+                  }
+                },
+                color: Colors.blue,
+                child: Text(language.lblChat, style: boldTextStyle(color: Colors.white)),
+                width: context.width(),
+                textColor: Colors.white,
+              ).paddingSymmetric(horizontal: 16.0, vertical: 10.0)
             ],
           ),
         );

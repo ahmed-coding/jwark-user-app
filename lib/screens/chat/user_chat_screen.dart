@@ -365,7 +365,7 @@ class _UserChatScreenState extends State<UserChatScreen> with WidgetsBindingObse
                   },
                 ),
               ),
-              if (!widget.isChattingAllow)
+              if (widget.isChattingAllow)
                 Positioned(
                   bottom: 16,
                   left: 16,
