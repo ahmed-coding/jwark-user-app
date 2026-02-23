@@ -7,8 +7,8 @@ var defaultPrimaryColor = Color(0xFF5F60B9);
 
 // Don't add slash at the end of the url
 
-// const DOMAIN_URL = "http://192.168.0.177";
-const DOMAIN_URL = "http://192.168.0.178";
+const DOMAIN_URL = "http://192.168.0.177";
+// const DOMAIN_URL = "http://192.168.0.178";
 
 const BASE_URL = '$DOMAIN_URL/api/';
 
