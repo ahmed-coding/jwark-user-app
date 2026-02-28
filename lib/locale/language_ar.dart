@@ -238,13 +238,16 @@ class LanguageAr extends BaseLanguage {
   String btnSubmit = "ارسال";
 
   @override
-  String get walkThrough1 => 'قم بالتسجيل أو تسجيل الدخول إلى حسابك باستخدام البريد الإلكتروني الخاص بك أو ملفات تعريف الوسائط الاجتماعية. يضمن إكمال ملف التعريف الخاص بك تجربة حجز سلسة.';
+  String get walkThrough1 =>
+      'قم بالتسجيل أو تسجيل الدخول إلى حسابك باستخدام البريد الإلكتروني الخاص بك أو ملفات تعريف الوسائط الاجتماعية. يضمن إكمال ملف التعريف الخاص بك تجربة حجز سلسة.';
 
   @override
-  String get walkThrough2 => 'اكتشف مجموعة واسعة من الخدمات المتوفرة في منطقتك. حدد خدمة، واختر فترة زمنية مناسبة، وقدم تفاصيل موقعك لحجز الخدمة بسرعة وسهولة.';
+  String get walkThrough2 =>
+      'اكتشف مجموعة واسعة من الخدمات المتوفرة في منطقتك. حدد خدمة، واختر فترة زمنية مناسبة، وقدم تفاصيل موقعك لحجز الخدمة بسرعة وسهولة.';
 
   @override
-  String get walkThrough3 => 'تتبع حالة الخدمة الخاصة بك في الوقت الحقيقي. عرض وإدارة حجوزاتك الحالية والسابقة. إعادة جدولة أو إلغاء الخدمات القادمة دون عناء.';
+  String get walkThrough3 =>
+      'تتبع حالة الخدمة الخاصة بك في الوقت الحقيقي. عرض وإدارة حجوزاتك الحالية والسابقة. إعادة جدولة أو إلغاء الخدمات القادمة دون عناء.';
 
   @override
   String lblNotification = "إشعارات";
@@ -286,10 +289,12 @@ class LanguageAr extends BaseLanguage {
   String get lblRateHandyman => "مكالمة";
 
   @override
-  String get msgForLocationOn => 'يتم تشغيل موقعك. استمر في عرض الخدمات المتاحة من جميع المجالات؟';
+  String get msgForLocationOn =>
+      'يتم تشغيل موقعك. استمر في عرض الخدمات المتاحة من جميع المجالات؟';
 
   @override
-  String get msgForLocationOff => 'يتم إيقاف تشغيل موقعك. اكتشف وابحث عن الخدمات المتاحة لمنطقتك المختارة.';
+  String get msgForLocationOff =>
+      'يتم إيقاف تشغيل موقعك. اكتشف وابحث عن الخدمات المتاحة لمنطقتك المختارة.';
 
   @override
   String get lblEnterPhnNumber => "أدخل رقم هاتفك";
@@ -316,10 +321,12 @@ class LanguageAr extends BaseLanguage {
   String get lblAudio => "صوتي";
 
   @override
-  String get lblChangePwdTitle => "يجب أن تكون كلمة المرور الجديدة مختلفة عن كلمة المرور السابقة المستخدمة";
+  String get lblChangePwdTitle =>
+      "يجب أن تكون كلمة المرور الجديدة مختلفة عن كلمة المرور السابقة المستخدمة";
 
   @override
-  String get lblForgotPwdSubtitle => "سيتم إرسال رابط إعادة تعيين كلمة المرور إلى عنوان البريد الإلكتروني الذي تم إدخاله أعلاه";
+  String get lblForgotPwdSubtitle =>
+      "سيتم إرسال رابط إعادة تعيين كلمة المرور إلى عنوان البريد الإلكتروني الذي تم إدخاله أعلاه";
 
   @override
   String get lblLoginTitle => "مرحبا مجددا ";
@@ -418,7 +425,7 @@ class LanguageAr extends BaseLanguage {
   String get lblAboutHandyman => "حول العمل اليدوي";
 
   @override
-  String get lblAboutProvider => "حول مزود";
+  String get lblAboutProvider => "حول المزود";
 
   @override
   String get lblNotRatedYet => "لم تقيم بعد";
@@ -477,7 +484,7 @@ class LanguageAr extends BaseLanguage {
   @override
   String get lblFeatured => "مميزة";
 
-String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
+  String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   @override
   String get lblGENERAL => "عام";
 
@@ -554,7 +561,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get lblWelcomeToHandyman => "مرحبا بكم في $APP_NAME.";
 
   @override
-  String get lblWalkThroughSubTitle => "خدمة $APP_NAME - تطبيق خدمات المنزل عند الطلب مع حل كامل";
+  String get lblWalkThroughSubTitle =>
+      "خدمة $APP_NAME - تطبيق خدمات المنزل عند الطلب مع حل كامل";
 
   @override
   String get textHandyman => 'بارع';
@@ -584,7 +592,7 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get lblFeaturedProduct => "هذا المنتج مميز";
 
   @override
-  String get lblAlert => "إنذار";
+  String get lblAlert => "تنبية";
 
   @override
   String get lblOnBase => "على أساس";
@@ -614,7 +622,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get lblTermsOfService => "شروط الخدمة";
 
   @override
-  String get lblWalkThrough0 => "$APP_NAME - $APP_NAME_TAG_LINE مع الحل الكامل ";
+  String get lblWalkThrough0 =>
+      "$APP_NAME - $APP_NAME_TAG_LINE مع الحل الكامل ";
 
   @override
   String get lblServiceTotalTime => "إجمالي الخدمة";
@@ -686,7 +695,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get confirmationRequestTxt => 'هل تريد تنفيذ هذا الإجراء؟';
 
   @override
-  String get lblDeleteAccountConformation => "سيتم حذف حسابك بشكل دائم. لن تتم استعادة بياناتك مرة أخرى.";
+  String get lblDeleteAccountConformation =>
+      "سيتم حذف حسابك بشكل دائم. لن تتم استعادة بياناتك مرة أخرى.";
 
   @override
   String get lblAutoSliderStatus => "حالة التمرير التلقائي";
@@ -731,7 +741,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get lblFree => "غير مدفوع الأجر";
 
   @override
-  String get lblAppleSignInNotAvailable => "تسجيل الدخول باستخدام Apple غير متوفرة لجهازك";
+  String get lblAppleSignInNotAvailable =>
+      "تسجيل الدخول باستخدام Apple غير متوفرة لجهازك";
 
   @override
   String get lblTotalExtraCharges => "إجمالي الرسوم الإضافية";
@@ -794,7 +805,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get noNotifications => "لا إشعارات";
 
   @override
-  String get noNotificationsSubTitle => "سنقوم بإعلامك بمجرد أن يكون لدينا شيء لك";
+  String get noNotificationsSubTitle =>
+      "سنقوم بإعلامك بمجرد أن يكون لدينا شيء لك";
 
   @override
   String get noFavouriteSubTitle => "ستظهر خدماتك المفضلة هنا";
@@ -815,7 +827,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get requiredAfterCountryCode => 'مطلوب بعد رمز البلد';
 
   @override
-  String get selectedOtherBookingTime => 'تم تمرير وقت الحجز المحدد بالفعل. الرجاء تحديد وقت آخر.';
+  String get selectedOtherBookingTime =>
+      'تم تمرير وقت الحجز المحدد بالفعل. الرجاء تحديد وقت آخر.';
 
   @override
   String get myServices => 'خدماتي';
@@ -842,7 +855,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get save => 'حفظ';
 
   @override
-  String get createPostJobWithoutSelectService => 'لا يمكنك نشر إنشاء وظيفة دون اختيار الخدمة';
+  String get createPostJobWithoutSelectService =>
+      'لا يمكنك نشر إنشاء وظيفة دون اختيار الخدمة';
 
   @override
   String get selectCategory => 'اختر الفئة';
@@ -851,7 +865,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get pleaseAddImage => 'الرجاء إضافة الصورة';
 
   @override
-  String get selectedBookingTimeIsAlreadyPassed => 'تم تمرير وقت الحجز المحدد بالفعل. الرجاء تحديد وقت آخر.';
+  String get selectedBookingTimeIsAlreadyPassed =>
+      'تم تمرير وقت الحجز المحدد بالفعل. الرجاء تحديد وقت آخر.';
 
   @override
   String get jobPrice => 'سعر الوظيفة';
@@ -887,7 +902,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get noPostJobFound => 'لم يتم العثور على وظيفة بعد';
 
   @override
-  String get noPostJobFoundSubtitle => 'عندما تنشر وظيفتك ، سيتم إخطار كل مزود ، ويمكنك اختيار مزودك المطلوب لإنجاز المهمة.';
+  String get noPostJobFoundSubtitle =>
+      'عندما تنشر وظيفتك ، سيتم إخطار كل مزود ، ويمكنك اختيار مزودك المطلوب لإنجاز المهمة.';
 
   @override
   String get pleaseEnterValidOTP => 'الرجاء إدخال كلمة المرور الصحيحة (OTP).';
@@ -899,7 +915,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get sendingOTP => 'إرسال OTP';
 
   @override
-  String get pleaseSelectDifferentSlotThenPrevious => '""الرجاء تحديد اوقات عمل مختلفة ثم السابق';
+  String get pleaseSelectDifferentSlotThenPrevious =>
+      '""الرجاء تحديد اوقات عمل مختلفة ثم السابق';
 
   @override
   String get pleaseSelectTheSlotsFirst => 'الرجاء تحديد اوقات العمل أولاً';
@@ -926,19 +943,23 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get clearChat => 'دردشة واضحة';
 
   @override
-  String get jobRequestSubtitle => 'خدمتك غير موجودة في النظام؟ لا تقلق ، يمكنك نشر متطلباتك.';
+  String get jobRequestSubtitle =>
+      'خدمتك غير موجودة في النظام؟ لا تقلق ، يمكنك نشر متطلباتك.';
 
   @override
   String get verified => 'تم التحقق';
 
   @override
-  String get theEnteredCodeIsInvalidPleaseTryAgain => 'الرمز الذي تم إدخاله غير صالح ، يرجى المحاولة مرة أخرى';
+  String get theEnteredCodeIsInvalidPleaseTryAgain =>
+      'الرمز الذي تم إدخاله غير صالح ، يرجى المحاولة مرة أخرى';
 
   @override
-  String get otpCodeIsSentToYourMobileNumber => 'تم إرسال رمز OTP إلى رقم هاتفك المحمول';
+  String get otpCodeIsSentToYourMobileNumber =>
+      'تم إرسال رمز OTP إلى رقم هاتفك المحمول';
 
   @override
-  String get yourPaymentFailedPleaseTryAgain => 'فشلت دفعتك ، يرجى المحاولة مرة أخرى';
+  String get yourPaymentFailedPleaseTryAgain =>
+      'فشلت دفعتك ، يرجى المحاولة مرة أخرى';
 
   @override
   String get yourPaymentHasBeenMadeSuccessfully => 'تم سداد دفعتك بنجاح';
@@ -968,7 +989,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get package => 'حزمة';
 
   @override
-  String get frequentlyBoughtTogether => 'اشترى في كثير من الأحيان جنبا إلى جنب';
+  String get frequentlyBoughtTogether =>
+      'اشترى في كثير من الأحيان جنبا إلى جنب';
 
   @override
   String get endOn => 'ينتهي';
@@ -986,7 +1008,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get lblInvalidTransaction => 'المعاملة غير صالحة';
 
   @override
-  String get getTheseServiceWithThisPackage => 'ستحصل على هذه الخدمات مع هذه الحزمة';
+  String get getTheseServiceWithThisPackage =>
+      'ستحصل على هذه الخدمات مع هذه الحزمة';
 
   @override
   String get lblNotValidUser => 'مستخدم غير صحيح';
@@ -1028,7 +1051,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get lblLocationPermissionDenied => 'تم رفض أذونات استخدام الموقع.';
 
   @override
-  String get lblLocationPermissionDeniedPermanently => 'يتم رفض أذونات الموقع بشكل دائم ، لا يمكننا طلب الأذونات.';
+  String get lblLocationPermissionDeniedPermanently =>
+      'يتم رفض أذونات الموقع بشكل دائم ، لا يمكننا طلب الأذونات.';
 
   @override
   String get lblEnableLocation => 'يرجى التأكد من تمكين خدمات الموقع.';
@@ -1076,10 +1100,12 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get requestInvoice => 'طلب الفاتورة';
 
   @override
-  String get invoiceSubTitle => 'أدخل عنوان البريد الإلكتروني حيث ترغب في تلقي فاتورتك';
+  String get invoiceSubTitle =>
+      'أدخل عنوان البريد الإلكتروني حيث ترغب في تلقي فاتورتك';
 
   @override
-  String get sentInvoiceText => 'يرجى التحقق من بريدك الإلكتروني الذي الرسلنا اليه الفاتورة.';
+  String get sentInvoiceText =>
+      'يرجى التحقق من بريدك الإلكتروني الذي الرسلنا اليه الفاتورة.';
 
   @override
   String get send => 'ارسال';
@@ -1127,7 +1153,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get advancePaid => 'دفع مسبقا';
 
   @override
-  String get insufficientBalanceMessage => 'لا يوجد رصيد كافي في محفظتك. الرجاء اختيار طريقة أخرى.';
+  String get insufficientBalanceMessage =>
+      'لا يوجد رصيد كافي في محفظتك. الرجاء اختيار طريقة أخرى.';
 
   @override
   String get cinetPayNotSupportedMessage => 'CinetPay غير مدعوم من عملاتك';
@@ -1241,10 +1268,12 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get reload => 'إعادة تحميل';
 
   @override
-  String get lblStripeTestCredential => 'لا يمكن اختبار بيانات الاعتماد أكثر من 500';
+  String get lblStripeTestCredential =>
+      'لا يمكن اختبار بيانات الاعتماد أكثر من 500';
 
   @override
-  String get noDataFoundInFilter => 'اختر أفضل معايير البحث للحصول على أفضل النتائج';
+  String get noDataFoundInFilter =>
+      'اختر أفضل معايير البحث للحصول على أفضل النتائج';
 
   @override
   String get addYourCountryCode => 'أضف رمز بلدك';
@@ -1256,10 +1285,12 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get couponCantApplied => 'لا يمكن تطبيق هذه القسيمة';
 
   @override
-  String get priceAmountValidationMessage => 'يجب أن يكون مبلغ السعر مبشرة من 0';
+  String get priceAmountValidationMessage =>
+      'يجب أن يكون مبلغ السعر مبشرة من 0';
 
   @override
-  String get pleaseWaitWhileWeLoadChatDetails => 'يرجى الانتظار أثناء تحميل تفاصيل الدردشة';
+  String get pleaseWaitWhileWeLoadChatDetails =>
+      'يرجى الانتظار أثناء تحميل تفاصيل الدردشة';
 
   @override
   String get isNotAvailableForChat => 'غير متوفر للدردشة';
@@ -1277,7 +1308,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get providerRemovedFromFavourite => 'تم إزالته من القائمة المفضلة';
 
   @override
-  String get provideValidCurrentPasswordMessage => 'يجب عليك توفير كلمة مرور الحالية صالحة';
+  String get provideValidCurrentPasswordMessage =>
+      'يجب عليك توفير كلمة مرور الحالية صالحة';
 
   @override
   String get copied => 'نسخ';
@@ -1307,7 +1339,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get paymentMethod => 'طريقة الدفع او السداد';
 
   @override
-  String get selectYourPaymentMethodToAddBalance => 'حدد طريقة الدفع الخاصة بك لإضافة رصيد';
+  String get selectYourPaymentMethodToAddBalance =>
+      'حدد طريقة الدفع الخاصة بك لإضافة رصيد';
 
   @override
   String get proceedToTopUp => 'انتقل إلى أعلى';
@@ -1316,10 +1349,12 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get serviceAddedToFavourite => 'تمت إضافة الخدمة إلى القائمة المفضلة';
 
   @override
-  String get serviceRemovedFromFavourite => 'تمت إزالة الخدمة من القائمة المفضلة';
+  String get serviceRemovedFromFavourite =>
+      'تمت إزالة الخدمة من القائمة المفضلة';
 
   @override
-  String get firebaseRemoteCannotBe => 'لا يمكن توصيل جهاز التحكم عن بعد الخاص بـ Firebase';
+  String get firebaseRemoteCannotBe =>
+      'لا يمكن توصيل جهاز التحكم عن بعد الخاص بـ Firebase';
 
   @override
   String get search => 'يبحث';
@@ -1328,10 +1363,12 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get close => 'يغلق';
 
   @override
-  String get totalAmountShouldBeMoreThan => 'يجب أن يكون المبلغ الإجمالي أكثر من';
+  String get totalAmountShouldBeMoreThan =>
+      'يجب أن يكون المبلغ الإجمالي أكثر من';
 
   @override
-  String get totalAmountShouldBeLessThan => 'يجب أن يكون المبلغ الإجمالي أقل من';
+  String get totalAmountShouldBeLessThan =>
+      'يجب أن يكون المبلغ الإجمالي أقل من';
 
   @override
   String get doYouWantToTopUpYourWallet => 'هل تريد أن تسبق محفظتك الآن؟';
@@ -1352,7 +1389,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get appliedTaxes => 'الضرائب التطبيقية';
 
   @override
-  String get accessDeniedContactYourAdmin => 'تم الرفض. اتصل بمسؤولك للحصول على المساعدة.';
+  String get accessDeniedContactYourAdmin =>
+      'تم الرفض. اتصل بمسؤولك للحصول على المساعدة.';
 
   @override
   String get yourWalletIsUpdated => 'تم تحديث محفظتك!';
@@ -1382,7 +1420,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get basedOn => 'مرتكز على';
 
   @override
-  String get serviceStatusPicMessage => 'يرجى التأكد من اختيار حالة حجز واحدة على الأقل';
+  String get serviceStatusPicMessage =>
+      'يرجى التأكد من اختيار حالة حجز واحدة على الأقل';
 
   @override
   String get clearFilter => 'مرشح واضح';
@@ -1397,7 +1436,7 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get serviceAddOns => 'الوظائف الإضافية للخدمة';
 
   @override
-  String get turnOn => 'شغله';
+  String get turnOn => 'تشغيل الموقع';
 
   @override
   String get turnOff => 'أطفأ';
@@ -1406,22 +1445,26 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get serviceVisitType => 'نوع زيارة الخدمة';
 
   @override
-  String get thisServiceIsOnlineRemote => 'سيتم إكمال هذه الخدمة عبر الإنترنت/عن بُعد.';
+  String get thisServiceIsOnlineRemote =>
+      'سيتم إكمال هذه الخدمة عبر الإنترنت/عن بُعد.';
 
   @override
-  String get deleteMessageForAddOnService => 'هل تريد إزالة هذه الخدمة الإضافية؟';
+  String get deleteMessageForAddOnService =>
+      'هل تريد إزالة هذه الخدمة الإضافية؟';
 
   @override
   String get confirmation => 'تأكيد!';
 
   @override
-  String get pleaseNoteThatAllServiceMarkedCompleted => 'يرجى ملاحظة أن جميع الوظائف الإضافية للخدمة محددة كما اكتملت!';
+  String get pleaseNoteThatAllServiceMarkedCompleted =>
+      'يرجى ملاحظة أن جميع الوظائف الإضافية للخدمة محددة كما اكتملت!';
 
   @override
   String get writeHere => 'اكتب هنا';
 
   @override
-  String get isAvailableGoTo => 'متاح. انتقل إلى المتجر وتنزيل الإصدار الجديد من التطبيق.';
+  String get isAvailableGoTo =>
+      'متاح. انتقل إلى المتجر وتنزيل الإصدار الجديد من التطبيق.';
 
   @override
   String get later => 'لاحقاً';
@@ -1496,7 +1539,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get enterYourMsisdnHere => 'أدخل msisdn الخاص بك هنا';
 
   @override
-  String get theTransactionIsStill => 'لا تزال المعاملة معالجة وهي في حالة غامضة. يرجى إجراء استفسار المعاملة لجلب حالة المعاملة.';
+  String get theTransactionIsStill =>
+      'لا تزال المعاملة معالجة وهي في حالة غامضة. يرجى إجراء استفسار المعاملة لجلب حالة المعاملة.';
 
   @override
   String get transactionIsSuccessful => 'عملية ناجحة';
@@ -1505,19 +1549,23 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get incorrectPinHasBeen => 'تم إدخال رقم التعريف الشخصي غير الصحيح';
 
   @override
-  String get theUserHasExceeded => 'لقد تجاوز المستخدم حد معاملة محفظته المسموح به';
+  String get theUserHasExceeded =>
+      'لقد تجاوز المستخدم حد معاملة محفظته المسموح به';
 
   @override
-  String get theAmountUserIs => 'المبلغ الذي يحاول المستخدم نقله أقل من الحد الأدنى المسموح به';
+  String get theAmountUserIs =>
+      'المبلغ الذي يحاول المستخدم نقله أقل من الحد الأدنى المسموح به';
 
   @override
   String get userDidnTEnterThePin => 'لم يدخل المستخدم الرقم التعريف الشخصي';
 
   @override
-  String get transactionInPendingState => 'المعاملة في حالة معلقة. يرجى التحقق بعد وقت ما';
+  String get transactionInPendingState =>
+      'المعاملة في حالة معلقة. يرجى التحقق بعد وقت ما';
 
   @override
-  String get userWalletDoesNot => 'لا تحتوي محفظة المستخدم على ما يكفي من المال لتغطية المبلغ المستحق';
+  String get userWalletDoesNot =>
+      'لا تحتوي محفظة المستخدم على ما يكفي من المال لتغطية المبلغ المستحق';
 
   @override
   String get theTransactionWasRefused => 'تم رفض الصفقة';
@@ -1526,7 +1574,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get thisIsAGeneric => 'هذا رفض عام له عدة أسباب محتملة';
 
   @override
-  String get payeeIsAlreadyInitiated => 'تم بالفعل بدء Pleadee لـ Churn أو Barred أو غير مسجل على منصة Airtel Money';
+  String get payeeIsAlreadyInitiated =>
+      'تم بالفعل بدء Pleadee لـ Churn أو Barred أو غير مسجل على منصة Airtel Money';
 
   @override
   String get theTransactionWasTimed => 'تم توقيت المعاملة.';
@@ -1610,7 +1659,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get monthly => 'شهريا';
 
   @override
-  String get noCouponsAvailableMsg => 'لا كوبونات في الوقت الحالي. استمر في التحقق من العروض الحصرية!';
+  String get noCouponsAvailableMsg =>
+      'لا كوبونات في الوقت الحالي. استمر في التحقق من العروض الحصرية!';
 
   @override
   String get refundPolicy => 'سياسة الاسترجاع';
@@ -1694,7 +1744,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get youAreNotConnectedWithChatServer => 'الاتصال بخادم الدردشة';
 
   @override
-  String get NotConnectedWithChatServerMessage => 'أنت غير متصل بخادم الدردشة. اضغط على الزر أدناه للاتصال وبدء الدردشة';
+  String get NotConnectedWithChatServerMessage =>
+      'أنت غير متصل بخادم الدردشة. اضغط على الزر أدناه للاتصال وبدء الدردشة';
 
   @override
   String get sentYouAMessage => 'أرسلت لك رسالة';
@@ -1724,10 +1775,12 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get helloGuest => 'مرحباً بالضيف';
 
   @override
-  String get eGCleaningPlumberPest => 'على سبيل المثال تنظيف، سباك، مكافحة الحشرات';
+  String get eGCleaningPlumberPest =>
+      'على سبيل المثال تنظيف، سباك، مكافحة الحشرات';
 
   @override
-  String get ifYouDidnTFind => 'إذا لم تجد خدمتنا، فلا تقلق! يمكنك بسهولة نشر طلبك.';
+  String get ifYouDidnTFind =>
+      'إذا لم تجد خدمتنا، فلا تقلق! يمكنك بسهولة نشر طلبك.';
 
   @override
   String get popularServices => 'الخدمات الشعبية';
@@ -1781,10 +1834,12 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get lblPleaseEnterAccountNumber => "الرجاء إدخال رقم الحساب";
 
   @override
-  String get lblAccountNumberMustContainOnlyDigits => "يجب أن يحتوي رقم الحساب على أرقام فقط";
+  String get lblAccountNumberMustContainOnlyDigits =>
+      "يجب أن يحتوي رقم الحساب على أرقام فقط";
 
   @override
-  String get lblAccountNumberMustBetween11And16Digits => "يجب أن يتراوح رقم الحساب بين 11 و16 رقمًا";
+  String get lblAccountNumberMustBetween11And16Digits =>
+      "يجب أن يتراوح رقم الحساب بين 11 و16 رقمًا";
 
   @override
   String get noBankDataTitle => "لم يتم العثور على بيانات البنك";
@@ -1832,7 +1887,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get successful => 'ناجح';
 
   @override
-  String get yourWithdrawalRequestHasBeenSuccessfullySubmitted => 'لقد تم إرسال طلب السحب الخاص بك بنجاح.';
+  String get yourWithdrawalRequestHasBeenSuccessfullySubmitted =>
+      'لقد تم إرسال طلب السحب الخاص بك بنجاح.';
 
   @override
   String get eg3000 => 'على سبيل المثال "3000"';
@@ -1880,7 +1936,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get packageName => 'اسم الحزمة';
 
   @override
-  String get feeAppliesForCancellations => 'تنطبق الرسوم على الإلغاءات التي تتم داخل';
+  String get feeAppliesForCancellations =>
+      'تنطبق الرسوم على الإلغاءات التي تتم داخل';
 
   @override
   String get a => 'أ';
@@ -1892,7 +1949,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get and => 'و';
 
   @override
-  String get areYouSureYou => 'هل أنت متأكد أنك تريد الإلغاء؟ قد يتم تطبيق رسوم الإلغاء على أساس سعر الخدمة الخاصة بك';
+  String get areYouSureYou =>
+      'هل أنت متأكد أنك تريد الإلغاء؟ قد يتم تطبيق رسوم الإلغاء على أساس سعر الخدمة الخاصة بك';
 
   @override
   String get totalCancellationFee => 'إجمالي رسوم الإلغاء';
@@ -1904,10 +1962,12 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get bookingCancelled => 'تم إلغاء الحجز';
 
   @override
-  String get yourBookingHasBeen => 'لقد تم إلغاء حجزك بنجاح. ستتم معالجة استرداد الأموال المطبق خلال 24 ساعة';
+  String get yourBookingHasBeen =>
+      'لقد تم إلغاء حجزك بنجاح. ستتم معالجة استرداد الأموال المطبق خلال 24 ساعة';
 
   @override
-  String get noteCheckYourBooking => 'ملحوظة: تحقق من سجل الحجز الخاص بك للحصول على تفاصيل استرداد الأموال';
+  String get noteCheckYourBooking =>
+      'ملحوظة: تحقق من سجل الحجز الخاص بك للحصول على تفاصيل استرداد الأموال';
 
   @override
   String get cancelledReason => 'سبب الإلغاء';
@@ -1955,7 +2015,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get queryYet => 'الاستعلام بعد';
 
   @override
-  String get toSubmitYourProblems => 'لإرسال مشاكلك، ما عليك سوى الضغط على زر ""إضافة"" وشرح مخاوفك';
+  String get toSubmitYourProblems =>
+      'لإرسال مشاكلك، ما عليك سوى الضغط على زر ""إضافة"" وشرح مخاوفك';
 
   @override
   String get noRecordsFoundFor => 'لم يتم العثور على سجلات ل';
@@ -1973,7 +2034,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get reply => 'رد';
 
   @override
-  String get eGDuringTheService => 'على سبيل المثال أثناء الخدمة، تعرض الأثاث للتلف عن طريق الخطأ.';
+  String get eGDuringTheService =>
+      'على سبيل المثال أثناء الخدمة، تعرض الأثاث للتلف عن طريق الخطأ.';
 
   @override
   String get doYouWantClosedThisQuery => 'هل تريد إغلاق هذا الاستعلام';
@@ -1982,7 +2044,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get markAsClosed => 'وضع علامة كمغلق';
 
   @override
-  String get youCanMarkThis => 'يمكنك وضع علامة ""مغلق"" على هذا إذا كنت راضيًا عن إجابتنا';
+  String get youCanMarkThis =>
+      'يمكنك وضع علامة ""مغلق"" على هذا إذا كنت راضيًا عن إجابتنا';
 
   @override
   String get subject => 'موضوع';
@@ -2009,7 +2072,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get chooseImage => 'اختر الصورة';
 
   @override
-  String get noteYouCanUpload => 'ملاحظة: يمكنك تحميل الصورة بامتدادات \'jpg\'، \'png\'، \'jpeg\' ويمكنك تحديد صورة واحدة فقط';
+  String get noteYouCanUpload =>
+      'ملاحظة: يمكنك تحميل الصورة بامتدادات \'jpg\'، \'png\'، \'jpeg\' ويمكنك تحديد صورة واحدة فقط';
 
   @override
   String get removeImage => 'إزالة الصورة';
@@ -2045,7 +2109,8 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get rateYourExperience => 'قيم تجربتك';
 
   @override
-  String get weValueYourFeedback => 'نحن نقدر ملاحظاتك! يرجى تقييم تجربتك الأخيرة مع خدمتنا';
+  String get weValueYourFeedback =>
+      'نحن نقدر ملاحظاتك! يرجى تقييم تجربتك الأخيرة مع خدمتنا';
 
   @override
   String get viewStatus => 'عرض الحالة';
@@ -2066,14 +2131,14 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   String get asHandyman => 'كعامل ماهر';
 
   @override
-  String get passwordLengthShouldBe => 'يجب أن يكون طول كلمة المرور من 8 إلى 12 حرفًا.';
+  String get passwordLengthShouldBe =>
+      'يجب أن يكون طول كلمة المرور من 8 إلى 12 حرفًا.';
 
   @override
   String get cash => 'نقدي';
 
   @override
   String get bank => 'بنك';
-
 
   @override
   String get razorPay => "رازور باي";
@@ -2117,5 +2182,6 @@ String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   @override
   String get chooseWithdrawalMethod => "اختر طريقة السحب";
 
-  String bookingCompleted(int count) => count > 1 ? '$count حجوزات مكتملة' : '$count حجز مكتمل';
+  String bookingCompleted(int count) =>
+      count > 1 ? '$count حجوزات مكتملة' : '$count حجز مكتمل';
 }
