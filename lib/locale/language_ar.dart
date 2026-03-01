@@ -70,10 +70,10 @@ class LanguageAr extends BaseLanguage {
   String get camera => 'آلة تصوير';
 
   @override
-  String get language => 'لغة';
+  String get language => 'اللغات';
 
   @override
-  String get appTheme => 'موضوع التطبيق';
+  String get appTheme => 'سمة التطبيق';
 
   @override
   String get bookingHistory => 'حجز التاريخ';
@@ -94,10 +94,10 @@ class LanguageAr extends BaseLanguage {
   String get about => 'عن';
 
   @override
-  String get logout => 'تسجيل خروج';
+  String get logout => 'تسجيل الخروج';
 
   @override
-  String get chooseTheme => 'اختر موضوع التطبيق';
+  String get chooseTheme => 'اختر سمة التطبيق';
 
   @override
   String get selectCountry => 'حدد الدولة';
@@ -175,7 +175,7 @@ class LanguageAr extends BaseLanguage {
   String get home => 'الصفحة الرئيسية';
 
   @override
-  String get category => 'فئة';
+  String get category => 'الفئات';
 
   @override
   String get booking => 'الحجز';
@@ -289,8 +289,7 @@ class LanguageAr extends BaseLanguage {
   String get lblRateHandyman => "مكالمة";
 
   @override
-  String get msgForLocationOn =>
-      'يتم تشغيل موقعك. استمر في عرض الخدمات المتاحة من جميع المجالات؟';
+  String get msgForLocationOn => 'قم بتشغيل موقعك ,لعرض الخدمات القريبة منك';
 
   @override
   String get msgForLocationOff =>
@@ -306,7 +305,7 @@ class LanguageAr extends BaseLanguage {
   String get lblLocationOff => "جميع الخدمات المتاحة";
 
   @override
-  String get lblAppSetting => "إعداد التطبيق";
+  String get lblAppSetting => "إعدادات التطبيق";
 
   @override
   String get lblSubTotal => "قيمة الضريبة";
@@ -592,7 +591,7 @@ class LanguageAr extends BaseLanguage {
   String get lblFeaturedProduct => "هذا المنتج مميز";
 
   @override
-  String get lblAlert => "تنبية";
+  String get lblAlert => "إشعار";
 
   @override
   String get lblOnBase => "على أساس";
@@ -754,7 +753,7 @@ class LanguageAr extends BaseLanguage {
   String get lblAll => "الجميع";
 
   @override
-  String get noConversation => "لا محادثة";
+  String get noConversation => "لا يوجد محادثات";
 
   @override
   String get noConversationSubTitle => "لم تقم بأي محادثة بعد.";
@@ -1439,7 +1438,7 @@ class LanguageAr extends BaseLanguage {
   String get turnOn => 'تشغيل الموقع';
 
   @override
-  String get turnOff => 'أطفأ';
+  String get turnOff => 'تشغيل';
 
   @override
   String get serviceVisitType => 'نوع زيارة الخدمة';
