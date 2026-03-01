@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 
 const APP_NAME = 'Jwark Service';
 const APP_NAME_TAG_LINE = 'Jwark Home Services App';
-var defaultPrimaryColor = Color(0xFF5F60B9);
+// var defaultPrimaryColor = Color(0xFF5F60B9);
+var defaultPrimaryColor = Color(0xFFA17537);
 
 // Don't add slash at the end of the url
 
