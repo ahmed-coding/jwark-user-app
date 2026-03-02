@@ -66,17 +66,17 @@ DateTime todayDate = DateTime(2022, 8, 24);
 
 Country defaultCountry() {
   return Country(
-    phoneCode: '91',
-    countryCode: 'IN',
+    phoneCode: '967',
+    countryCode: 'YE',
     e164Sc: 91,
     geographic: true,
     level: 1,
-    name: 'India',
-    example: '9123456789',
-    displayName: 'India (IN) [+91]',
-    displayNameNoCountryCode: 'India (IN)',
-    e164Key: '91-IN-0',
-    fullExampleWithPlusSign: '+919123456789',
+    name: 'Yemen',
+    example: '770948670',
+    displayName: 'Yemen (YE) [+967]',
+    displayNameNoCountryCode: 'Yemen (YE)',
+    e164Key: '967-YE-0',
+    fullExampleWithPlusSign: '+967770948670',
   );
 }
 
