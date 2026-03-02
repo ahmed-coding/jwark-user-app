@@ -190,7 +190,7 @@ class LanguageAr extends BaseLanguage {
   String get serviceName => 'اسم الخدمة';
 
   @override
-  String get service => 'خدمة';
+  String get service => 'الخدمات';
 
   @override
   String get lblCancelReason => 'الرجاء إدخال السبب لإلغاء حجز الخدمة هذه.';
@@ -289,11 +289,12 @@ class LanguageAr extends BaseLanguage {
   String get lblRateHandyman => "مكالمة";
 
   @override
-  String get msgForLocationOn => 'قم بتشغيل موقعك ,لعرض الخدمات القريبة منك';
+  String get msgForLocationOn =>
+      'هل تريد ايقاف خدمة الموقع .ولكن لن تستطيع ايجاد الخدمات الجديدة القريبة منك';
 
   @override
   String get msgForLocationOff =>
-      'يتم إيقاف تشغيل موقعك. اكتشف وابحث عن الخدمات المتاحة لمنطقتك المختارة.';
+      'قم بتشغيل الموقع. واكتشف وابحث عن الخدمات المتاحة لمنطقتك المختارة.';
 
   @override
   String get lblEnterPhnNumber => "أدخل رقم هاتفك";
@@ -481,7 +482,7 @@ class LanguageAr extends BaseLanguage {
   String get lblSeeYourRatings => "انظر تقييماتك";
 
   @override
-  String get lblFeatured => "مميزة";
+  String get lblFeatured => "المميزة";
 
   String get lblNoServicesFound => "لا توجد خدمات في منطقتك";
   @override
@@ -1438,7 +1439,7 @@ class LanguageAr extends BaseLanguage {
   String get turnOn => 'تشغيل الموقع';
 
   @override
-  String get turnOff => 'تشغيل';
+  String get turnOff => 'ايقاف خدمة الموقع';
 
   @override
   String get serviceVisitType => 'نوع زيارة الخدمة';
@@ -2034,7 +2035,7 @@ class LanguageAr extends BaseLanguage {
 
   @override
   String get eGDuringTheService =>
-      'على سبيل المثال أثناء الخدمة، تعرض الأثاث للتلف عن طريق الخطأ.';
+      'على سبيل المثال ،  لم تجد الخدمة التي تبحث عنها ،او أثناء الخدمة تعرض الخدمة للتلف عن طريق الخطأ.';
 
   @override
   String get doYouWantClosedThisQuery => 'هل تريد إغلاق هذا الاستعلام';
@@ -2050,7 +2051,8 @@ class LanguageAr extends BaseLanguage {
   String get subject => 'موضوع';
 
   @override
-  String get eGDamagedFurniture => 'على سبيل المثال الأثاث التالف';
+  String get eGDamagedFurniture =>
+      'على سبيل المثال لم تجد الخدمة التي تبحث عنها';
 
   @override
   String get closedOn => 'مغلق في:';
