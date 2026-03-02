@@ -329,7 +329,7 @@ class LanguageAr extends BaseLanguage {
       "سيتم إرسال رابط إعادة تعيين كلمة المرور إلى عنوان البريد الإلكتروني الذي تم إدخاله أعلاه";
 
   @override
-  String get lblLoginTitle => "مرحبا مجددا ";
+  String get lblLoginTitle => "مرحبآ بك ";
 
   @override
   String get lblLoginSubTitle => "مرحبًا بك مرة أخرى ، لقد فاتتك لفترة طويلة";
@@ -2006,7 +2006,7 @@ class LanguageAr extends BaseLanguage {
   String get closedBy => 'مغلق بواسطة';
 
   @override
-  String get helpDesk => 'مكتب المساعدة';
+  String get helpDesk => 'الشكاوى والمساعدة';
 
   @override
   String get addNew => 'أضف جديد';
