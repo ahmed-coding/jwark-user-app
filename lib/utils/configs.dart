@@ -14,7 +14,7 @@ const DOMAIN_URL = "https://ghostwhite-leopard-823170.hostingersite.com";
 // const DOMAIN_URL = "http://192.168.1.254";
 const BASE_URL = '$DOMAIN_URL/api/';
 
-const DEFAULT_LANGUAGE = 'en';
+const DEFAULT_LANGUAGE = 'ar';
 
 /// You can change this to your Provider App package name
 /// This will be used in Registered As Partner in Sign In Screen where your users can redirect to the Play/App Store for Provider App
