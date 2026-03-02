@@ -986,7 +986,7 @@ class LanguageAr extends BaseLanguage {
   String get postJob => 'طلب عمل';
 
   @override
-  String get package => 'حزمة';
+  String get package => 'العرض';
 
   @override
   String get frequentlyBoughtTogether =>
@@ -1002,14 +1002,14 @@ class LanguageAr extends BaseLanguage {
   String get includedServices => 'شملت الخدمات';
 
   @override
-  String get includedInThisPackage => 'المدرجة في هذه الحزمة';
+  String get includedInThisPackage => 'المدرجة في هذه العروض';
 
   @override
   String get lblInvalidTransaction => 'المعاملة غير صالحة';
 
   @override
   String get getTheseServiceWithThisPackage =>
-      'ستحصل على هذه الخدمات مع هذه الحزمة';
+      'ستحصل على هذه الخدمات مع هذه العروض';
 
   @override
   String get lblNotValidUser => 'مستخدم غير صحيح';
@@ -1912,16 +1912,16 @@ class LanguageAr extends BaseLanguage {
   String get fullNameOnBankAccount => 'الاسم الكامل على الحساب البنكي';
 
   @override
-  String get packageIsExpired => 'انتهت صلاحية الحزمة';
+  String get packageIsExpired => 'انتهت صلاحية العرض';
 
   @override
-  String get bookPackage => 'حزمة الكتاب';
+  String get bookPackage => 'عرض الكتاب';
 
   @override
-  String get packageDescription => 'وصف الحزمة';
+  String get packageDescription => 'وصف العرض';
 
   @override
-  String get packagePrice => 'سعر الحزمة';
+  String get packagePrice => 'سعر العرض';
 
   @override
   String get online => 'متصل';
@@ -1933,7 +1933,7 @@ class LanguageAr extends BaseLanguage {
   String get wouldYouLikeTo => 'هل ترغب في المتابعة وتأكيد هذا الحجز؟';
 
   @override
-  String get packageName => 'اسم الحزمة';
+  String get packageName => 'اسم العرض';
 
   @override
   String get feeAppliesForCancellations =>
