@@ -7,10 +7,10 @@ class LanguageAr extends BaseLanguage {
   String get walkTitle1 => 'إنشاء وإعداد حسابك';
 
   @override
-  String get walkTitle2 => 'تصفح وحجز الخدمات';
+  String get walkTitle2 => 'تصفح واكتشف الخدمات القريبة منك بكل سهولة';
 
   @override
-  String get walkTitle3 => 'تتبع وإدارة الحجوزات الخاصة بك';
+  String get walkTitle3 => 'اكتشف الخدمات القريبة منك بكل سهولة';
 
   @override
   String get getStarted => 'البدء';
@@ -28,16 +28,16 @@ class LanguageAr extends BaseLanguage {
   String get hintLastNameTxt => 'أدخل اسم العائلة';
 
   @override
-  String get hintContactNumberTxt => 'أدخل رقم الاتصال الخاص بك';
+  String get hintContactNumberTxt => 'أدخل رقم الهاتف الخاص بك';
 
   @override
   String get hintEmailAddressTxt => 'أدخل عنوان بريدك الالكتروني';
 
   @override
-  String get hintUserNameTxt => 'اسم المستخدم';
+  String get hintUserNameTxt => 'انشئ أسم مستخدم خاص بك';
 
   @override
-  String get hintPasswordTxt => 'ادخل رقمك السري';
+  String get hintPasswordTxt => 'ادخل كلمة المرور';
 
   @override
   String get hintReenterPasswordTxt => 'إعادة إدخال كلمة المرور الخاصة بك';
@@ -55,7 +55,7 @@ class LanguageAr extends BaseLanguage {
   String get alreadyHaveAccountTxt => 'هل لديك حساب';
 
   @override
-  String get rememberMe => 'تذكرنى';
+  String get rememberMe => 'تذكير';
 
   @override
   String get resetPassword => 'إعادة تعيين كلمة المرور';
@@ -239,15 +239,15 @@ class LanguageAr extends BaseLanguage {
 
   @override
   String get walkThrough1 =>
-      'قم بالتسجيل أو تسجيل الدخول إلى حسابك باستخدام البريد الإلكتروني الخاص بك أو ملفات تعريف الوسائط الاجتماعية. يضمن إكمال ملف التعريف الخاص بك تجربة حجز سلسة.';
+      'قم  بتسجيل الدخول إلى حسابك باستخدام البريد الإلكتروني الخاص بك .';
 
   @override
   String get walkThrough2 =>
-      'اكتشف مجموعة واسعة من الخدمات المتوفرة في منطقتك. حدد خدمة، واختر فترة زمنية مناسبة، وقدم تفاصيل موقعك لحجز الخدمة بسرعة وسهولة.';
+      'اكتشف مجموعة واسعة من الخدمات القريبة منك واختار الخدمة التي تحتاجها ';
 
   @override
   String get walkThrough3 =>
-      'تتبع حالة الخدمة الخاصة بك في الوقت الحقيقي. عرض وإدارة حجوزاتك الحالية والسابقة. إعادة جدولة أو إلغاء الخدمات القادمة دون عناء.';
+      'سيقوم التطبيق بتحدد موقعك الحالي وسوف يقوم بعرض كافة الخدمات القريبة منك ويمكنك اختيار الخدمةالتي تحتاجها';
 
   @override
   String lblNotification = "إشعارات";
@@ -322,7 +322,7 @@ class LanguageAr extends BaseLanguage {
 
   @override
   String get lblChangePwdTitle =>
-      "يجب أن تكون كلمة المرور الجديدة مختلفة عن كلمة المرور السابقة المستخدمة";
+      "يجب أن تكون كلمة المرور الجديدة مختلفة عن كلمة المرور السابقة ";
 
   @override
   String get lblForgotPwdSubtitle =>
@@ -338,7 +338,7 @@ class LanguageAr extends BaseLanguage {
   String get lblOrContinueWith => "أو متابعة";
 
   @override
-  String get lblHelloUser => "مرحبا المستخدم!";
+  String get lblHelloUser => "مرحبا بك";
 
   @override
   String get lblSignUpSubTitle => 'قم بإنشاء حسابك لتجربة أفضل';
@@ -510,7 +510,7 @@ class LanguageAr extends BaseLanguage {
   String get lblNoReviews => "لم يتم تقديم تعليقات";
 
   @override
-  String get lblUnreadNotification => "اشعار غير مقروء";
+  String get lblUnreadNotification => "اشعار غير مقروءة";
 
   @override
   String get lblChoosePaymentMethod => "اختر وسيلة الدفع";
@@ -549,7 +549,7 @@ class LanguageAr extends BaseLanguage {
   String get lblRating => "تقييم";
 
   @override
-  String get lblAvailableAt => "المواقع المتاحة";
+  String get lblAvailableAt => "الموقع المتاح";
 
   @override
   String get lblRelatedServices => "الخدمات ذات الصلة";
@@ -662,7 +662,7 @@ class LanguageAr extends BaseLanguage {
   String get lblHr => "ساعة";
 
   @override
-  String get lblSignInWithGoogle => "الدخول مع جوجل";
+  String get lblSignInWithGoogle => "تسجيل الدخول ب جوجل";
 
   @override
   String get lblSignInWithOTP => 'تسجيل الدخول باستخدام OTP';
@@ -1012,7 +1012,7 @@ class LanguageAr extends BaseLanguage {
       'ستحصل على هذه الخدمات مع هذه العروض';
 
   @override
-  String get lblNotValidUser => 'مستخدم غير صحيح';
+  String get lblNotValidUser => 'اسم المستخدم غير صحيح';
 
   @override
   String get lblSkip => 'تخطى';
@@ -1105,7 +1105,7 @@ class LanguageAr extends BaseLanguage {
 
   @override
   String get sentInvoiceText =>
-      'يرجى التحقق من بريدك الإلكتروني الذي الرسلنا اليه الفاتورة.';
+      'تم أرسال الفاتورة الى بريدك الالكتروني قم بتحقق منه';
 
   @override
   String get send => 'ارسال';
