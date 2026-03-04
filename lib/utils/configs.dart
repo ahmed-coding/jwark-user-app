@@ -62,7 +62,7 @@ const PAYPAL_CURRENCY_CODE = 'USD';
 const SADAD_API_URL = 'https://api-s.sadad.qa';
 const SADAD_PAY_URL = "https://d.sadad.qa";
 
-DateTime todayDate = DateTime(2022, 8, 24);
+DateTime todayDate = DateTime(2026, 3, 2);
 
 Country defaultCountry() {
   return Country(
