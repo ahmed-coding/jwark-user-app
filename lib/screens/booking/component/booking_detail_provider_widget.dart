@@ -220,7 +220,8 @@ class BookingDetailProviderWidgetState extends State<BookingDetailProviderWidget
                     if (user != null) {
                       Fluttertoast.cancel();
                       if (widget.bookingDetail != null) {
-                        isChattingAllow = widget.bookingDetail!.status == BookingStatusKeys.complete || widget.bookingDetail!.status == BookingStatusKeys.cancelled;
+                        // isChattingAllow = widget.bookingDetail!.status == BookingStatusKeys.complete || widget.bookingDetail!.status == BookingStatusKeys.cancelled;
+                        isChattingAllow = true;
                       }
                       UserChatScreen(receiverUser: user, isChattingAllow: isChattingAllow).launch(context);
                     } else {

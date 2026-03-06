@@ -91,12 +91,12 @@ class _BookingDetailScreenState extends State<BookingDetailScreen> with WidgetsB
       {CommonKeys.bookingId: widget.bookingId.toString(), CommonKeys.customerId: appStore.userId},
       callbackForStatus: (status) {
         bookingStatus = status;
-        if (bookingStatus == BookingStatusKeys.onGoing) {
-          refreshProviderLocation();
-          startLocationUpdates();
-        } else {
-          stopLocationUpdates();
-        }
+        // if (bookingStatus == BookingStatusKeys.onGoing) {
+        //   refreshProviderLocation();
+        //   startLocationUpdates();
+        // } else {
+        //   stopLocationUpdates();
+        // }
       },
     );
     if (isLoading) setState(() {});
@@ -476,10 +476,10 @@ class _BookingDetailScreenState extends State<BookingDetailScreen> with WidgetsB
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween, // Space between items
             children: [
-              Text(
-                language.lblAboutHandyman,
-                style: boldTextStyle(size: LABEL_TEXT_SIZE),
-              ),
+              // Text(
+              //   language.lblAboutHandyman,
+              //   style: boldTextStyle(size: LABEL_TEXT_SIZE),
+              // ),
               GestureDetector(
                 onTap: () {
                   HandymanInfoScreen(handymanId: handymanList.first.id).launch(context).then((value) => null);
@@ -542,12 +542,12 @@ class _BookingDetailScreenState extends State<BookingDetailScreen> with WidgetsB
                     text: language.lblAboutProvider,
                     style: boldTextStyle(size: LABEL_TEXT_SIZE),
                   ),
-                  if (res.handymanData.validate().isNotEmpty &&
-                      (res.providerData!.id == res.handymanData!.first.id.validate()))
-                    TextSpan(
-                      text: ' (${language.asHandyman})',
-                      style: secondaryTextStyle(size: LABEL_TEXT_SIZE),
-                    ),
+                  // if (res.handymanData.validate().isNotEmpty &&
+                  //     (res.providerData!.id == res.handymanData!.first.id.validate()))
+                  //   TextSpan(
+                  //     text: ' (${language.asHandyman})',
+                  //     style: secondaryTextStyle(size: LABEL_TEXT_SIZE),
+                  //   ),
                 ],
               ),
             ),
@@ -888,135 +888,137 @@ class _BookingDetailScreenState extends State<BookingDetailScreen> with WidgetsB
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        12.height,
-        Text(
-          handymanList.isEmpty
-              ? language.providerLocation
-              : res.providerData!.id != handymanList.first.id
-                  ? language.handymanLocation
-                  : language.providerLocation,
-          style: boldTextStyle(),
-        ),
-        4.height,
-        Row(
-          children: [
-            Text("${language.lastUpdatedAt} ", style: secondaryTextStyle(size: 10)),
-            Text(
-              "${DateTime.parse(providerLocation?.data.datetime.toString() ?? DateTime.now().toString()).timeAgo}",
-              style: primaryTextStyle(size: 10),
-            ).visible(providerLocation?.data.datetime.isNotEmpty ?? false),
-          ],
-        ).visible(providerLocation?.data.datetime.isNotEmpty ?? false),
-        8.height,
-        SizedBox(
-          height: 250,
-          child: Stack(
-            children: [
-              GoogleMap(
-                zoomControlsEnabled: true,
-                initialCameraPosition: CameraPosition(
-                  target: _initialLocation,
-                  zoom: 14.0,
-                ),
-                mapType: MapType.normal,
-                minMaxZoomPreference: MinMaxZoomPreference(1, 40),
-                gestureRecognizers: Set()
-                  ..add(Factory<OneSequenceGestureRecognizer>(() => new EagerGestureRecognizer()))
-                  ..add(Factory<PanGestureRecognizer>(() => PanGestureRecognizer()))
-                  ..add(Factory<ScaleGestureRecognizer>(() => ScaleGestureRecognizer()))
-                  ..add(Factory<TapGestureRecognizer>(() => TapGestureRecognizer()))
-                  ..add(Factory<VerticalDragGestureRecognizer>(() => VerticalDragGestureRecognizer())),
-                onMapCreated: (GoogleMapController controller) {
-                  mapController = controller;
-                  setState(() {});
-                },
-                markers: Set<Marker>.from(
-                  [
-                    if (providerLocation != null)
-                      Marker(
-                        markerId: MarkerId('Location'),
-                        position: LatLng(
-                          double.parse(providerLocation?.data.latitude.toString() ?? "0.0"),
-                          double.parse(providerLocation?.data.longitude.toString() ?? "0.0"),
-                        ),
-                        icon: customIcon ?? BitmapDescriptor.defaultMarker,
-                      ),
-                  ],
-                ),
-              ),
-              Positioned(
-                left: 10,
-                top: 10,
-                child: CupertinoActivityIndicator(color: black).visible(isLocationLoader),
-              ),
-            ],
-          ),
-        ),
-        10.height,
-        Row(
-          children: [
-            AppButton(
-              onTap: () {
-                TrackLocation(
-                  bookingId: widget.bookingId,
-                  isHandyman: res.providerData!.id != handymanList.first.id,
-                ).launch(context);
-              },
-              padding: EdgeInsets.only(top: 0, left: 8, right: 8),
-              height: 42,
-              color: Color(0xFF39A81D),
-              textColor: white,
-              text: language.track,
-            ).expand(),
-            16.width,
-            Container(
-              width: 42,
-              height: 42,
-              padding: EdgeInsets.all(12),
-              decoration: boxDecorationDefault(
-                color: Colors.white,
-                borderRadius: BorderRadius.all(Radius.circular(6)),
-              ),
-              child: CachedImageWidget(
-                url: ic_refresh,
-                color: textSecondaryColor,
-                height: 42,
-              ),
-            ).onTap(() {
-              refreshProviderLocation();
-            }),
-            16.width,
-            Container(
-              width: 42,
-              height: 42,
-              padding: EdgeInsets.all(12),
-              decoration: boxDecorationDefault(
-                color: Colors.white,
-                borderRadius: BorderRadius.all(
-                  Radius.circular(6),
-                ),
-              ),
-              child: CachedImageWidget(
-                url: ic_share,
-                color: textSecondaryColor,
-                height: 22,
-              ),
-            ).onTap(
-              () {
-                shareComponent();
-              },
-            ),
-          ],
-        ),
-        16.height,
-        Text(
-          handymanList.isEmpty
-              ? language.providerReached
-              : res.providerData!.id != handymanList.first.id
-                  ? language.handymanReached
-                  : language.providerReached,
-          style: secondaryTextStyle(),
-        ),
+        // 12.height,
+        // Text(
+        //   handymanList.isEmpty
+        //       ? language.providerLocation
+        //       : res.providerData!.id != handymanList.first.id
+        //           ? language.handymanLocation
+        //           : language.providerLocation,
+        //   style: boldTextStyle(),
+        // ),
+        // 4.height,
+        // Row(
+        //   children: [
+        //     Text("${language.lastUpdatedAt} ", style: secondaryTextStyle(size: 10)),
+        //     Text(
+        //       "${DateTime.parse(providerLocation?.data.datetime.toString() ?? DateTime.now().toString()).timeAgo}",
+        //       style: primaryTextStyle(size: 10),
+        //     ).visible(providerLocation?.data.datetime.isNotEmpty ?? false),
+        //   ],
+        // ).visible(providerLocation?.data.datetime.isNotEmpty ?? false),
+        // 8.height,
+        // SizedBox(
+        //   height: 250,
+        //   child: Stack(
+        //     children: [
+        //       GoogleMap(
+        //         zoomControlsEnabled: true,
+        //         initialCameraPosition: CameraPosition(
+        //           target: _initialLocation,
+        //           zoom: 14.0,
+        //         ),
+        //         mapType: MapType.normal,
+        //         minMaxZoomPreference: MinMaxZoomPreference(1, 40),
+        //         gestureRecognizers: Set()
+        //           ..add(Factory<OneSequenceGestureRecognizer>(() => new EagerGestureRecognizer()))
+        //           ..add(Factory<PanGestureRecognizer>(() => PanGestureRecognizer()))
+        //           ..add(Factory<ScaleGestureRecognizer>(() => ScaleGestureRecognizer()))
+        //           ..add(Factory<TapGestureRecognizer>(() => TapGestureRecognizer()))
+        //           ..add(Factory<VerticalDragGestureRecognizer>(() => VerticalDragGestureRecognizer())),
+        //         onMapCreated: (GoogleMapController controller) {
+        //           mapController = controller;
+        //           setState(() {});
+        //         },
+        //         markers: Set<Marker>.from(
+        //           [
+        //             if (providerLocation != null)
+        //               Marker(
+        //                 markerId: MarkerId('Location'),
+        //                 position: LatLng(
+        //                   double.parse(providerLocation?.data.latitude.toString() ?? "0.0"),
+        //                   double.parse(providerLocation?.data.longitude.toString() ?? "0.0"),
+        //                 ),
+        //                 icon: customIcon ?? BitmapDescriptor.defaultMarker,
+        //               ),
+        //           ],
+        //         ),
+        //       ),
+        //       Positioned(
+        //         left: 10,
+        //         top: 10,
+        //         child: CupertinoActivityIndicator(color: black).visible(isLocationLoader),
+        //       ),
+        //     ],
+        //   ),
+        // ),
+        // 10.height,
+        // Row(
+        //   children: [
+          //   AppButton(
+          //     onTap: () {
+          //       TrackLocation(
+          //         bookingId: widget.bookingId,
+          //         isHandyman: res.providerData!.id != handymanList.first.id,
+          //       ).launch(context);
+          //     },
+          //     padding: EdgeInsets.only(top: 0, left: 8, right: 8),
+          //     height: 42,
+          //     color: Color(0xFF39A81D),
+          //     textColor: white,
+          //     text: language.track,
+          //   ).expand(),
+          //   16.width,
+          //   Container(
+          //     width: 42,
+          //     height: 42,
+          //     padding: EdgeInsets.all(12),
+          //     decoration: boxDecorationDefault(
+          //       color: Colors.white,
+          //       borderRadius: BorderRadius.all(Radius.circular(6)),
+          //     ),
+          //     child: CachedImageWidget(
+          //       url: ic_refresh,
+          //       color: textSecondaryColor,
+          //       height: 42,
+          //     ),
+          //   ).onTap(() {
+          //     refreshProviderLocation();
+          //   }
+            
+          //   ),
+          //   16.width,
+          //   Container(
+          //     width: 42,
+          //     height: 42,
+          //     padding: EdgeInsets.all(12),
+          //     decoration: boxDecorationDefault(
+          //       color: Colors.white,
+          //       borderRadius: BorderRadius.all(
+          //         Radius.circular(6),
+          //       ),
+          //     ),
+          //     child: CachedImageWidget(
+          //       url: ic_share,
+          //       color: textSecondaryColor,
+          //       height: 22,
+          //     ),
+          //   ).onTap(
+          //     () {
+          //       shareComponent();
+          //     },
+          //   ),
+          // ],
+        // ),
+        // 16.height,
+        // Text(
+        //   handymanList.isEmpty
+        //       ? language.providerReached
+        //       : res.providerData!.id != handymanList.first.id
+        //           ? language.handymanReached
+        //           : language.providerReached,
+        //   style: secondaryTextStyle(),
+        // ),
       ],
     );
   }
