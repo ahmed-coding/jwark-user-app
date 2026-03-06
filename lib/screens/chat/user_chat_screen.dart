@@ -32,7 +32,7 @@ class UserChatScreen extends StatefulWidget {
   final UserData receiverUser;
   final bool isChattingAllow;
 
-  UserChatScreen({required this.receiverUser, this.isChattingAllow = false});
+  UserChatScreen({required this.receiverUser, this.isChattingAllow = true});
 
   @override
   _UserChatScreenState createState() => _UserChatScreenState();
@@ -341,7 +341,7 @@ class _UserChatScreenState extends State<UserChatScreen> with WidgetsBindingObse
             fit: StackFit.expand,
             children: [
               Container(
-                margin: EdgeInsets.only(bottom: widget.isChattingAllow ? 0 : 80),
+                margin: EdgeInsets.only(bottom: widget.isChattingAllow ? 80 : 80),
                 child: FirestorePagination(
                   reverse: true,
                   isLive: true,

@@ -29,7 +29,7 @@ class BookingDetailProviderWidget extends StatefulWidget {
 class BookingDetailProviderWidgetState extends State<BookingDetailProviderWidget> {
   UserData userData = UserData();
 
-  bool isChattingAllow = false;
+  bool isChattingAllow = true;
 
   int? flag;
 
@@ -223,7 +223,7 @@ class BookingDetailProviderWidgetState extends State<BookingDetailProviderWidget
                         // isChattingAllow = widget.bookingDetail!.status == BookingStatusKeys.complete || widget.bookingDetail!.status == BookingStatusKeys.cancelled;
                         isChattingAllow = true;
                       }
-                      UserChatScreen(receiverUser: user, isChattingAllow: isChattingAllow).launch(context);
+                      UserChatScreen(receiverUser: user, isChattingAllow: true).launch(context);
                     } else {
                       Fluttertoast.cancel();
                       toast("${widget.providerData.firstName} ${language.isNotAvailableForChat}");
