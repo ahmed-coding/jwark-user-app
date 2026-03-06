@@ -243,29 +243,29 @@ class ProfileFragmentState extends State<ProfileFragment> {
                             },
                           ),
                         // .visible(rolesAndPermissionStore.blogList),
-                        SettingItemWidget(
-                          decoration: boxDecorationDefault(color: context.cardColor,borderRadius: BorderRadiusDirectional.vertical(bottom: Radius.circular(0))),
-                          leading: ic_star.iconImage(size: SETTING_ICON_SIZE),
-                          title: language.rateUs,
-                          titleTextStyle: boldTextStyle(size: 12),
-                          trailing: trailing,
-                          padding: EdgeInsets.only(top: 20, left: 16, right: 16),
-                          onTap: () async {
-                            if (isAndroid) {
-                              if (getStringAsync(CUSTOMER_PLAY_STORE_URL).isNotEmpty) {
-                                commonLaunchUrl(getStringAsync(CUSTOMER_PLAY_STORE_URL), launchMode: LaunchMode.externalApplication);
-                              } else {
-                                commonLaunchUrl('${getSocialMediaLink(LinkProvider.PLAY_STORE)}${await getPackageName()}', launchMode: LaunchMode.externalApplication);
-                              }
-                            } else if (isIOS) {
-                              if (getStringAsync(CUSTOMER_APP_STORE_URL).isNotEmpty) {
-                                commonLaunchUrl(getStringAsync(CUSTOMER_APP_STORE_URL), launchMode: LaunchMode.externalApplication);
-                              } else {
-                                commonLaunchUrl(IOS_LINK_FOR_USER, launchMode: LaunchMode.externalApplication);
-                              }
-                            }
-                          },
-                        ),
+                        // SettingItemWidget(
+                        //   decoration: boxDecorationDefault(color: context.cardColor,borderRadius: BorderRadiusDirectional.vertical(bottom: Radius.circular(0))),
+                        //   leading: ic_star.iconImage(size: SETTING_ICON_SIZE),
+                        //   title: language.rateUs,
+                        //   titleTextStyle: boldTextStyle(size: 12),
+                        //   trailing: trailing,
+                        //   padding: EdgeInsets.only(top: 20, left: 16, right: 16),
+                        //   onTap: () async {
+                        //     if (isAndroid) {
+                        //       if (getStringAsync(CUSTOMER_PLAY_STORE_URL).isNotEmpty) {
+                        //         commonLaunchUrl(getStringAsync(CUSTOMER_PLAY_STORE_URL), launchMode: LaunchMode.externalApplication);
+                        //       } else {
+                        //         commonLaunchUrl('${getSocialMediaLink(LinkProvider.PLAY_STORE)}${await getPackageName()}', launchMode: LaunchMode.externalApplication);
+                        //       }
+                        //     } else if (isIOS) {
+                        //       if (getStringAsync(CUSTOMER_APP_STORE_URL).isNotEmpty) {
+                        //         commonLaunchUrl(getStringAsync(CUSTOMER_APP_STORE_URL), launchMode: LaunchMode.externalApplication);
+                        //       } else {
+                        //         commonLaunchUrl(IOS_LINK_FOR_USER, launchMode: LaunchMode.externalApplication);
+                        //       }
+                        //     }
+                        //   },
+                        // ),
                         SettingItemWidget(
                           decoration: boxDecorationDefault(color: context.cardColor,borderRadius: BorderRadiusDirectional.vertical(bottom: Radius.circular(0))),
                           leading: ic_my_review.iconImage(size: SETTING_ICON_SIZE),
