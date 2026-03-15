@@ -583,10 +583,10 @@ class LanguageAr extends BaseLanguage {
   String get lblServiceFaq => "أسئلة وأجوبة الخدمة";
 
   @override
-  String get lblLogoutTitle => "أوه لا ، أنت تغادر!";
+  String get lblLogoutTitle => "سوف تقوم بتسجيل الخروج!";
 
   @override
-  String get lblLogoutSubTitle => "هل ترغب بالخروج؟";
+  String get lblLogoutSubTitle => "هل تريد تسجيل الخروج؟";
 
   @override
   String get lblFeaturedProduct => "هذا المنتج مميز";
@@ -668,7 +668,7 @@ class LanguageAr extends BaseLanguage {
   String get lblSignInWithOTP => 'تسجيل الدخول باستخدام OTP';
 
   @override
-  String get lblDangerZone => "منطقة الخطر";
+  String get lblDangerZone => "حول المستخدم ";
 
   @override
   String get lblDeleteAccount => "حذف الحساب";
