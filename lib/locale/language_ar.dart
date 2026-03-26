@@ -130,10 +130,10 @@ class LanguageAr extends BaseLanguage {
   String get lblGallery => "صالة عرض";
 
   @override
-  String get yourReview => "مراجعتك";
+  String get yourReview => "تقييماتك";
 
   @override
-  String get review => "إعادة النظر";
+  String get review => "التقييمات";
 
   @override
   String get hintDescription => "أدخل الوصف الخاص بك";
@@ -148,7 +148,7 @@ class LanguageAr extends BaseLanguage {
   String get contactAdmin => "يرجى الاتصال مع المسؤول";
 
   @override
-  String get allServices => 'جميع الخدمات';
+  String get allServices => 'الخدمات جميع';
 
   @override
   String get duration => 'مدة';
@@ -434,7 +434,7 @@ class LanguageAr extends BaseLanguage {
   String get lblDeleteReview => "حذف التقييم";
 
   @override
-  String get lblConfirmReviewSubTitle => 'هل تريد حذف هذه المراجعة؟';
+  String get lblConfirmReviewSubTitle => 'هل تريد حذف هذا التقييم';
 
   @override
   String get lblConfirmService => 'هل تريد الاحتفاظ بهذه الخدمة؟';
@@ -507,7 +507,7 @@ class LanguageAr extends BaseLanguage {
   String get lblClearFilter => "حذف التصنيف";
 
   @override
-  String get lblNoReviews => "لم يتم تقديم تعليقات";
+  String get lblNoReviews => "لم يتم تقديم تقييمات";
 
   @override
   String get lblUnreadNotification => "اشعار غير مقروءة";
@@ -528,7 +528,7 @@ class LanguageAr extends BaseLanguage {
   String get lblYourRating => "تقييمك";
 
   @override
-  String get lblEnterReview => "أدخل رأيك (اختياري)";
+  String get lblEnterReview => "أدخل تقييمك (اختياري)";
 
   @override
   String get lblDelete => "حذف";
@@ -931,7 +931,7 @@ class LanguageAr extends BaseLanguage {
   String get noTimeSlots => 'لا اوقات عمل زمنية';
 
   @override
-  String get bookingDateAndSlot => 'البحث عن التاريخ والفتحة';
+  String get bookingDateAndSlot => 'تاريخ وموعد التسليم';
 
   @override
   String get extraCharges => 'رسوم إضافية';
@@ -1079,10 +1079,10 @@ class LanguageAr extends BaseLanguage {
   String get personalInfo => 'معلومات شخصية';
 
   @override
-  String get essentialSkills => 'مهارات اساسيه';
+  String get essentialSkills => 'المميزات';
 
   @override
-  String get knownLanguages => 'اللغات المعروفة';
+  String get knownLanguages => 'اللغات';
 
   @override
   String get authorBy => 'مؤلف';
@@ -1430,10 +1430,10 @@ class LanguageAr extends BaseLanguage {
   String get bookingStatus => 'وضع الحجز';
 
   @override
-  String get addOns => 'الوظائف الإضافية';
+  String get addOns => 'الخدمات الإضافية';
 
   @override
-  String get serviceAddOns => 'الوظائف الإضافية للخدمة';
+  String get serviceAddOns => 'الخدمات الإضافية للخدمة';
 
   @override
   String get turnOn => 'تشغيل الموقع';
@@ -1457,7 +1457,7 @@ class LanguageAr extends BaseLanguage {
 
   @override
   String get pleaseNoteThatAllServiceMarkedCompleted =>
-      'يرجى ملاحظة أن جميع الوظائف الإضافية للخدمة محددة كما اكتملت!';
+      'يرجى ملاحظة أن جميع الخدمات الإضافية للخدمة محددة كما اكتملت!';
 
   @override
   String get writeHere => 'اكتب هنا';
