@@ -940,7 +940,7 @@ class LanguageAr extends BaseLanguage {
   String get chatCleared => 'تم مسح الدردشة';
 
   @override
-  String get clearChat => 'دردشة واضحة';
+  String get clearChat => 'حذف الدردشة';
 
   @override
   String get jobRequestSubtitle =>
@@ -1114,7 +1114,7 @@ class LanguageAr extends BaseLanguage {
   String get published => 'تم النشر';
 
   @override
-  String get clearChatMessage => 'هل تريد مسح هذه الدردشة؟';
+  String get clearChatMessage => 'هل تريد حذف هذه الدردشة؟';
 
   @override
   String get deleteMessage => 'هل تريد أن تحذف';
