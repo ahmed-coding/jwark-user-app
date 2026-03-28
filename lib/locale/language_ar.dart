@@ -178,7 +178,7 @@ class LanguageAr extends BaseLanguage {
   String get category => 'الفئات';
 
   @override
-  String get booking => 'الحجز';
+  String get booking => 'الطلب';
 
   @override
   String get profile => 'الملف الشخصي';
@@ -392,10 +392,10 @@ class LanguageAr extends BaseLanguage {
   String get textProvider => "مزود";
 
   @override
-  String get lblConfirmBooking => "تأكيد الحجز";
+  String get lblConfirmBooking => "تأكيد الطلب";
 
   @override
-  String get lblConfirmMsg => 'هل تريد تأكيد هذا الحجز؟';
+  String get lblConfirmMsg => 'هل تريد تأكيد هذا الطلب؟';
 
   @override
   String get lblCancel => "الغاء";
@@ -416,7 +416,7 @@ class LanguageAr extends BaseLanguage {
   String get lblStep2 => "الخطوة 2";
 
   @override
-  String get lblBookingID => "معرف الحجز";
+  String get lblBookingID => "معرف الطلب";
 
   @override
   String get lblDate => "تاريخ";
@@ -446,7 +446,7 @@ class LanguageAr extends BaseLanguage {
   String get lblEndServicesMsg => "هل ترغب في إنهاء هذه الخدمة؟";
 
   @override
-  String get lblCancelBooking => "إلغاء الحجز";
+  String get lblCancelBooking => "إلغاء الطلب";
 
   @override
   String get lblStart => "بدء العمل";
@@ -629,7 +629,7 @@ class LanguageAr extends BaseLanguage {
   String get lblServiceTotalTime => "إجمالي الخدمة";
 
   @override
-  String get lblDateTimeUpdated => 'تم الانتهاء من تاريخ الحجز والوقت بنجاح';
+  String get lblDateTimeUpdated => 'تم الانتهاء من تاريخ الطلب والوقت بنجاح';
 
   @override
   String get lblSelectDate => "الرجاء تحديد وقت التاريخ";
@@ -638,10 +638,10 @@ class LanguageAr extends BaseLanguage {
   String get lblReasonCancelling => "سبب:";
 
   @override
-  String get lblReasonRejecting => "سبب رفض هذا الحجز";
+  String get lblReasonRejecting => "سبب رفض هذا الطلب";
 
   @override
-  String get lblFailed => "سبب فشل هذا الحجز";
+  String get lblFailed => "سبب فشل هذا الطلب";
 
   @override
   String get lblNotDescription => "لا يوجد وصف متاح";
@@ -818,7 +818,7 @@ class LanguageAr extends BaseLanguage {
   String get disclaimer => "تنصل";
 
   @override
-  String get disclaimerContent => "سيُطلب منك الدفع بمجرد اكتمال الحجز.";
+  String get disclaimerContent => "سيُطلب منك الدفع بمجرد اكتمال الطلب.";
 
   @override
   String get inputMustBeNumberOrDigit => 'يجب أن يكون الإدخال رقمًا أو رمزا';
@@ -828,7 +828,7 @@ class LanguageAr extends BaseLanguage {
 
   @override
   String get selectedOtherBookingTime =>
-      'تم تمرير وقت الحجز المحدد بالفعل. الرجاء تحديد وقت آخر.';
+      'تم تمرير وقت الطلب المحدد بالفعل. الرجاء تحديد وقت آخر.';
 
   @override
   String get myServices => 'خدماتي';
@@ -866,7 +866,7 @@ class LanguageAr extends BaseLanguage {
 
   @override
   String get selectedBookingTimeIsAlreadyPassed =>
-      'تم تمرير وقت الحجز المحدد بالفعل. الرجاء تحديد وقت آخر.';
+      'تم تمرير وقت الطلب المحدد بالفعل. الرجاء تحديد وقت آخر.';
 
   @override
   String get jobPrice => 'سعر الوظيفة';
@@ -1169,7 +1169,7 @@ class LanguageAr extends BaseLanguage {
   String get payAdvance => 'دفع تقدم';
 
   @override
-  String get advancePaymentMessage => 'قم بعمل دفعة مسبقة لإكمال الحجز';
+  String get advancePaymentMessage => 'قم بعمل دفعة مسبقة لإكمال الطلب';
 
   @override
   String get advancePayAmount => 'مبلغ الدفع المسبق';
@@ -1427,7 +1427,7 @@ class LanguageAr extends BaseLanguage {
   String get clearFilter => 'مرشح واضح';
 
   @override
-  String get bookingStatus => 'وضع الحجز';
+  String get bookingStatus => 'وضع الطلب';
 
   @override
   String get addOns => 'الخدمات الإضافية';
@@ -1509,7 +1509,7 @@ class LanguageAr extends BaseLanguage {
   String get pleaseEnterYourAddress => 'الرجاء إدخال عنوانك';
 
   @override
-  String get pleaseSelectBookingDate => 'الرجاء تحديد تاريخ الحجز والفتحة';
+  String get pleaseSelectBookingDate => 'الرجاء تحديد تاريخ الطلب والفتحة';
 
   @override
   String get doYouWantTo => 'هل تريد إزالة هذه القسيمة؟';
@@ -1766,7 +1766,7 @@ class LanguageAr extends BaseLanguage {
   String get newRequest => 'طلب جديد';
 
   @override
-  String get upcomingBooking => 'الحجز القادم';
+  String get upcomingBooking => 'الطلب القادم';
 
   @override
   String get theUserHasDenied => 'رفض المستخدم استخدام التعرف على الكلام';
@@ -1930,7 +1930,7 @@ class LanguageAr extends BaseLanguage {
   String get noteAddressIsNot => 'ملاحظة: العنوان غير مطلوب للخدمات البعيدة.';
 
   @override
-  String get wouldYouLikeTo => 'هل ترغب في المتابعة وتأكيد هذا الحجز؟';
+  String get wouldYouLikeTo => 'هل ترغب في المتابعة وتأكيد هذا الطلب؟';
 
   @override
   String get packageName => 'اسم العرض';
@@ -1959,7 +1959,7 @@ class LanguageAr extends BaseLanguage {
   String get goBack => 'عُد';
 
   @override
-  String get bookingCancelled => 'تم إلغاء الحجز';
+  String get bookingCancelled => 'تم إلغاء الطلب';
 
   @override
   String get yourBookingHasBeen =>
@@ -1967,7 +1967,7 @@ class LanguageAr extends BaseLanguage {
 
   @override
   String get noteCheckYourBooking =>
-      'ملحوظة: تحقق من سجل الحجز الخاص بك للحصول على تفاصيل استرداد الأموال';
+      'ملحوظة: تحقق من سجل الطلب الخاص بك للحصول على تفاصيل استرداد الأموال';
 
   @override
   String get cancelledReason => 'سبب الإلغاء';
