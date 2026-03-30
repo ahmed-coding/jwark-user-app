@@ -1454,7 +1454,7 @@ class LanguageAr extends BaseLanguage {
       'هل تريد إزالة هذه الخدمة الإضافية؟';
 
   @override
-  String get confirmation => 'تأكيد!';
+  String get confirmation => 'تأكيد';
 
   @override
   String get pleaseNoteThatAllServiceMarkedCompleted =>
