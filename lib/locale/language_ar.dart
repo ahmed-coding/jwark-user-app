@@ -76,7 +76,7 @@ class LanguageAr extends BaseLanguage {
   String get appTheme => 'سمة التطبيق';
 
   @override
-  String get bookingHistory => 'حجز التاريخ';
+  String get bookingHistory => 'تاريخ الطلب';
 
   @override
   String get rateUs => 'قيمنا';
@@ -142,7 +142,7 @@ class LanguageAr extends BaseLanguage {
   String get lblApply => "تطبيق";
 
   @override
-  String get bookTheService => "حجز الخدمة";
+  String get bookTheService => "طلب الخدمة";
 
   @override
   String get contactAdmin => "يرجى الاتصال مع المسؤول";
@@ -160,7 +160,7 @@ class LanguageAr extends BaseLanguage {
   String get payment => "قسط";
 
   @override
-  String get done => "منتهي";
+  String get done => "تاكيد استلام الخدمة";
 
   @override
   String get totalAmount => 'المبلغ الإجمالي';
@@ -184,7 +184,7 @@ class LanguageAr extends BaseLanguage {
   String get profile => 'الملف الشخصي';
 
   @override
-  String get lblAlertBooking => 'هل تريد حجز الخدمة؟';
+  String get lblAlertBooking => 'هل تريد طلب الخدمة؟';
 
   @override
   String get serviceName => 'اسم الخدمة';
@@ -193,7 +193,7 @@ class LanguageAr extends BaseLanguage {
   String get service => 'الخدمات';
 
   @override
-  String get lblCancelReason => 'الرجاء إدخال السبب لإلغاء حجز الخدمة هذه.';
+  String get lblCancelReason => 'الرجاء إدخال السبب لإلغاء طلب الخدمة هذه.';
 
   @override
   String get enterReason => "أدخل السبب هنا";
@@ -650,7 +650,7 @@ class LanguageAr extends BaseLanguage {
   String get lblMaterialTheme => "تمكين المواد التي تظهرها";
 
   @override
-  String get lblServiceProof => "دليل الخدمة";
+  String get lblServiceProof => "دليل استلام الخدمة";
 
   @override
   String get lblAndroid12Support => "هذا الإجراء سيعيد تشغيل تطبيقك. يتأكد؟";
@@ -1755,7 +1755,7 @@ class LanguageAr extends BaseLanguage {
   String get pushNotification => 'دفع الإخطار';
 
   @override
-  String get yourBooking => 'حجزك';
+  String get yourBooking => 'طلبك';
 
   @override
   String get featuredServices => 'خدمات مميزة';
