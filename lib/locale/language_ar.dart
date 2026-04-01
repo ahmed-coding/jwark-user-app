@@ -467,7 +467,7 @@ class LanguageAr extends BaseLanguage {
   String get lblID => "هوية شخصية";
 
   @override
-  String get lblNoBookingsFound => "لا توجد حجوزات";
+  String get lblNoBookingsFound => "لا توجد طلبات";
 
   @override
   String get lblCategory => "فئة";
@@ -1964,7 +1964,7 @@ class LanguageAr extends BaseLanguage {
 
   @override
   String get yourBookingHasBeen =>
-      'لقد تم إلغاء حجزك بنجاح. ستتم معالجة استرداد الأموال المطبق خلال 24 ساعة';
+      'لقد تم إلغاء طلبك بنجاح. ستتم معالجة استرداد الأموال المطبق خلال 24 ساعة';
 
   @override
   String get noteCheckYourBooking =>
@@ -2185,5 +2185,5 @@ class LanguageAr extends BaseLanguage {
   String get chooseWithdrawalMethod => "اختر طريقة السحب";
 
   String bookingCompleted(int count) =>
-      count > 1 ? '$count حجوزات مكتملة' : '$count حجز مكتمل';
+      count > 1 ? '$count طلبات مكتملة' : '$count طلب مكتمل';
 }
