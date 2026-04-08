@@ -437,7 +437,7 @@ class LanguageAr extends BaseLanguage {
   String get lblConfirmReviewSubTitle => 'هل تريد حذف هذا التقييم';
 
   @override
-  String get lblConfirmService => 'هل تريد الاحتفاظ بهذه الخدمة؟';
+  String get lblConfirmService => 'ماالسبب الذي يجعلك تريد تعليق الطلب؟';
 
   @override
   String get lblConFirmResumeService => 'هل تريد استئناف هذه الخدمة؟';
@@ -449,13 +449,13 @@ class LanguageAr extends BaseLanguage {
   String get lblCancelBooking => "إلغاء الطلب";
 
   @override
-  String get lblStart => "بدء العمل";
+  String get lblStart => "التاكيد على الطلب";
 
   @override
-  String get lblHold => "تعليق العمل";
+  String get lblHold => "تعليق الطلب";
 
   @override
-  String get lblResume => "سيرة ذاتية";
+  String get lblResume => "استئناف الخدمة";
 
   @override
   String get lblPayNow => "ادفع الآن";
@@ -893,7 +893,7 @@ class LanguageAr extends BaseLanguage {
   String get goToHome => 'اذهب إلى الرئيسية';
 
   @override
-  String get goToReview => 'اذهب للتقيميات';
+  String get goToReview => 'اذهب الى تفاصيل الطلب';
 
   @override
   String get noServiceAdded => 'لم تتم إضافة خدمة';
