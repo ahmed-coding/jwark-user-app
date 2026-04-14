@@ -677,7 +677,8 @@ class LanguageAr extends BaseLanguage {
   String get lblUnderMaintenance => "تحت الصيانة...";
 
   @override
-  String get lblCatchUpAfterAWhile => "اللحاق بعد فترة من الوقت";
+  String get lblCatchUpAfterAWhile =>
+      "التطبيق تحت الصيانة في الوقت الحالي يرجى المحاولة لاحقآ ";
 
   @override
   String get lblId => "هوية شخصية";
