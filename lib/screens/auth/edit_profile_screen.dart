@@ -559,33 +559,33 @@ class EditProfileScreenState extends State<EditProfileScreen> {
                 16.height,
                 Row(
                   children: [
-                    DropdownButtonFormField<CountryListResponse>(
-                      decoration: inputDecoration(context, labelText: language.selectCountry),
-                      isExpanded: true,
-                      value: selectedCountry,
-                      dropdownColor: context.cardColor,
-                      items: countryList.map((CountryListResponse e) {
-                        return DropdownMenuItem<CountryListResponse>(
-                          value: e,
-                          child: Text(
-                            e.name!,
-                            style: primaryTextStyle(),
-                            maxLines: 1,
-                            overflow: TextOverflow.ellipsis,
-                          ),
-                        );
-                      }).toList(),
-                      onChanged: (CountryListResponse? value) async {
-                        hideKeyboard(context);
-                        countryId = value!.id!;
-                        selectedCountry = value;
-                        selectedState = null;
-                        selectedCity = null;
-                        getStates(value.id!);
+                    // DropdownButtonFormField<CountryListResponse>(
+                    //   decoration: inputDecoration(context, labelText: language.selectCountry),
+                    //   isExpanded: true,
+                    //   value: selectedCountry,
+                    //   dropdownColor: context.cardColor,
+                    //   items: countryList.map((CountryListResponse e) {
+                    //     return DropdownMenuItem<CountryListResponse>(
+                    //       value: e,
+                    //       child: Text(
+                    //         e.name!,
+                    //         style: primaryTextStyle(),
+                    //         maxLines: 1,
+                    //         overflow: TextOverflow.ellipsis,
+                    //       ),
+                    //     );
+                    //   }).toList(),
+                    //   onChanged: (CountryListResponse? value) async {
+                    //     hideKeyboard(context);
+                    //     countryId = value!.id!;
+                    //     selectedCountry = value;
+                    //     selectedState = null;
+                    //     selectedCity = null;
+                    //     getStates(value.id!);
 
-                        setState(() {});
-                      },
-                    ).expand(),
+                    //     setState(() {});
+                    //   },
+                    // ).expand(),
                     8.width.visible(stateList.isNotEmpty),
                     if (stateList.isNotEmpty)
                       DropdownButtonFormField<StateListResponse>(
