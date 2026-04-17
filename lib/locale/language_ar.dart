@@ -739,7 +739,7 @@ class LanguageAr extends BaseLanguage {
   String get lblWaitingForProviderApproval => "في انتظار موافقة المزود";
 
   @override
-  String get lblFree => "غير مدفوع الأجر";
+  String get lblFree => "خدمة استفسارية";
 
   @override
   String get lblAppleSignInNotAvailable =>
