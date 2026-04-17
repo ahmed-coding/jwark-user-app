@@ -234,21 +234,21 @@ class _SignInScreenState extends State<SignInScreen> {
                 setState(() {});
               },
             ),
-            TextButton(
-              onPressed: () {
-                showInDialog(
-                  context,
-                  contentPadding: EdgeInsets.zero,
-                  dialogAnimation: DialogAnimation.SLIDE_TOP_BOTTOM,
-                  builder: (_) => ForgotPasswordScreen(),
-                );
-              },
-              child: Text(
-                language.forgotPassword,
-                style: boldTextStyle(color: primaryColor, fontStyle: FontStyle.italic),
-                textAlign: TextAlign.right,
-              ),
-            ).flexible(),
+            // TextButton(
+            //   onPressed: () {
+            //     showInDialog(
+            //       context,
+            //       contentPadding: EdgeInsets.zero,
+            //       dialogAnimation: DialogAnimation.SLIDE_TOP_BOTTOM,
+            //       builder: (_) => ForgotPasswordScreen(),
+            //     );
+            //   },
+            //   child: Text(
+            //     language.forgotPassword,
+            //     style: boldTextStyle(color: primaryColor, fontStyle: FontStyle.italic),
+            //     textAlign: TextAlign.right,
+            //   ),
+            // ).flexible(),
           ],
         ),
         24.height,
@@ -281,24 +281,6 @@ class _SignInScreenState extends State<SignInScreen> {
             ),
           ],
         ),
-        // TextButton(
-        //   onPressed: () {
-        //     if (isAndroid) {
-        //       if (getStringAsync(PROVIDER_PLAY_STORE_URL).isNotEmpty) {
-        //         launchUrl(Uri.parse(getStringAsync(PROVIDER_PLAY_STORE_URL)), mode: LaunchMode.externalApplication);
-        //       } else {
-        //         launchUrl(Uri.parse('${getSocialMediaLink(LinkProvider.PLAY_STORE)}$PROVIDER_PACKAGE_NAME'), mode: LaunchMode.externalApplication);
-        //       }
-        //     } else if (isIOS) {
-        //       if (getStringAsync(PROVIDER_APPSTORE_URL).isNotEmpty) {
-        //         commonLaunchUrl(getStringAsync(PROVIDER_APPSTORE_URL));
-        //       } else {
-        //         commonLaunchUrl(IOS_LINK_FOR_PARTNER);
-        //       }
-        //     }
-        //   },
-        //   child: Text(language.lblRegisterAsPartner, style: boldTextStyle(color: primaryColor)),
-        // )
       ],
     );
   }

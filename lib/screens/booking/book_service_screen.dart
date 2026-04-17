@@ -612,51 +612,51 @@ class _BookServiceScreenState extends State<BookServiceScreen> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           if (widget.selectedPackage == null) 16.height,
-          if (widget.selectedPackage == null)
-            Container(
-              padding: EdgeInsets.only(left: 16, top: 8, bottom: 8),
-              decoration: boxDecorationDefault(color: context.cardColor),
-              child: Row(
-                children: [
-                  Wrap(
-                    spacing: 8,
-                    crossAxisAlignment: WrapCrossAlignment.center,
-                    children: [
-                      ic_coupon_prefix.iconImage(color: Colors.green, size: 20),
-                      Text(language.lblCoupon, style: primaryTextStyle()),
-                    ],
-                  ).expand(),
-                  16.width,
-                  TextButton(
-                    onPressed: () {
-                      if (appliedCouponData != null) {
-                        showConfirmDialogCustom(
-                          context,
-                          dialogType: DialogType.DELETE,
-                          title: language.doYouWantTo,
-                          positiveText: language.lblDelete,
-                          negativeText: language.lblCancel,
-                          onAccept: (p0) {
-                            appliedCouponData = null;
-                            setPrice();
-                            setState(() {});
-                          },
-                        );
-                      } else {
-                        applyCoupon();
-                      }
-                    },
-                    child: Text(
-                      appliedCouponData != null
-                          ? language.lblRemoveCoupon
-                          : language.applyCoupon,
-                      style: primaryTextStyle(color: context.primaryColor),
-                    ),
-                  )
-                ],
-              ),
-            ),
-          24.height,
+          // if (widget.selectedPackage == null)
+          //   Container(
+          //     padding: EdgeInsets.only(left: 16, top: 8, bottom: 8),
+          //     decoration: boxDecorationDefault(color: context.cardColor),
+          //     child: Row(
+          //       children: [
+          //         Wrap(
+          //           spacing: 8,
+          //           crossAxisAlignment: WrapCrossAlignment.center,
+          //           children: [
+          //             ic_coupon_prefix.iconImage(color: Colors.green, size: 20),
+          //             Text(language.lblCoupon, style: primaryTextStyle()),
+          //           ],
+          //         ).expand(),
+          //         16.width,
+          //         TextButton(
+          //           onPressed: () {
+          //             if (appliedCouponData != null) {
+          //               showConfirmDialogCustom(
+          //                 context,
+          //                 dialogType: DialogType.DELETE,
+          //                 title: language.doYouWantTo,
+          //                 positiveText: language.lblDelete,
+          //                 negativeText: language.lblCancel,
+          //                 onAccept: (p0) {
+          //                   appliedCouponData = null;
+          //                   setPrice();
+          //                   setState(() {});
+          //                 },
+          //               );
+          //             } else {
+          //               applyCoupon();
+          //             }
+          //           },
+          //           child: Text(
+          //             appliedCouponData != null
+          //                 ? language.lblRemoveCoupon
+          //                 : language.applyCoupon,
+          //             style: primaryTextStyle(color: context.primaryColor),
+          //           ),
+          //         )
+          //       ],
+          //     ),
+          //   ),
+          // 24.height,
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -740,33 +740,33 @@ class _BookServiceScreenState extends State<BookServiceScreen> {
                     children: [
                       if (appliedCouponData != null)
                         Divider(height: 26, color: context.dividerColor),
-                      if (appliedCouponData != null)
-                        Row(
-                          children: [
-                            Row(
-                              children: [
-                                Text(language.lblCoupon,
-                                    style: secondaryTextStyle(size: 14)),
-                                Text(
-                                  " (${appliedCouponData!.code})",
-                                  style: boldTextStyle(
-                                      color: primaryColor, size: 14),
-                                ).onTap(() {
-                                  applyCoupon(
-                                      isApplied: appliedCouponData!.code
-                                          .validate()
-                                          .isNotEmpty);
-                                }).expand(),
-                              ],
-                            ).expand(),
-                            PriceWidget(
-                              price:
-                                  bookingAmountModel.finalCouponDiscountAmount,
-                              color: Colors.green,
-                              isBoldText: true,
-                            ),
-                          ],
-                        ),
+                      // if (appliedCouponData != null)
+                      //   Row(
+                      //     children: [
+                      //       Row(
+                      //         children: [
+                      //           Text(language.lblCoupon,
+                      //               style: secondaryTextStyle(size: 14)),
+                      //           Text(
+                      //             " (${appliedCouponData!.code})",
+                      //             style: boldTextStyle(
+                      //                 color: primaryColor, size: 14),
+                      //           ).onTap(() {
+                      //             applyCoupon(
+                      //                 isApplied: appliedCouponData!.code
+                      //                     .validate()
+                      //                     .isNotEmpty);
+                      //           }).expand(),
+                      //         ],
+                      //       ).expand(),
+                      //       PriceWidget(
+                      //         price:
+                      //             bookingAmountModel.finalCouponDiscountAmount,
+                      //         color: Colors.green,
+                      //         isBoldText: true,
+                      //       ),
+                      //     ],
+                      //   ),
                     ],
                   ),
 
