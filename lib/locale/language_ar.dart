@@ -332,7 +332,7 @@ class LanguageAr extends BaseLanguage {
   String get lblLoginTitle => "مرحبآ بك ";
 
   @override
-  String get lblLoginSubTitle => "مرحبًا بك مرة أخرى ، لقد فاتتك لفترة طويلة";
+  String get lblLoginSubTitle => "مرحبًا بك مرة أخرى";
 
   @override
   String get lblOrContinueWith => "أو متابعة";
