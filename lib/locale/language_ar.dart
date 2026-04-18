@@ -565,7 +565,7 @@ class LanguageAr extends BaseLanguage {
       "خدمة $APP_NAME - تطبيق خدمات المنزل عند الطلب مع حل كامل";
 
   @override
-  String get textHandyman => 'بارع';
+  String get textHandyman => 'تم تعيينة للتوصيل';
 
   @override
   String get lblChooseFromMap => "اختر من بين الخريطة";
@@ -816,7 +816,7 @@ class LanguageAr extends BaseLanguage {
   String get termsConditionsAccept => "يرجى قبول الشروط والأحكام";
 
   @override
-  String get disclaimer => "نتصل";
+  String get disclaimer => "ملاحظة:";
 
   @override
   String get disclaimerContent => "سيُطلب منك الدفع بمجرد اكتمال الطلب.";
@@ -2103,7 +2103,7 @@ class LanguageAr extends BaseLanguage {
   String get selectStartDateEndDate => 'حدد تاريخ البدء وتاريخ الانتهاء';
 
   @override
-  String get handymanNotFound => 'لم يتم العثور على العامل الماهر';
+  String get handymanNotFound => 'لم يتم العثور';
 
   @override
   String get providerNotFound => 'لم يتم العثور على الموفر';
