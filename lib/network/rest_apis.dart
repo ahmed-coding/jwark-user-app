@@ -221,7 +221,7 @@ Future<void> logout(BuildContext context) async {
 
                     appStore.setLoading(false);
                     // Observer(builder: (context) =>  SignInScreen(isFromDashboard: true));
-                    SignInScreen().launch(context);
+                    SignInScreen().launch(context, isNewTask: true, pageRouteAnimation: PageRouteAnimation.Fade);
                   } else {
                     toast(errorInternetNotAvailable);
                   }
