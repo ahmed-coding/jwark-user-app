@@ -309,7 +309,7 @@ class LanguageAr extends BaseLanguage {
   String get lblAppSetting => "إعدادات التطبيق";
 
   @override
-  String get lblSubTotal => "قيمة الضريبة";
+  String get lblSubTotal => "القيمة النهائية";
 
   @override
   String get lblImage => "صورة";
