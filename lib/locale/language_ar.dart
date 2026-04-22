@@ -1753,7 +1753,7 @@ class LanguageAr extends BaseLanguage {
   String get sentYouAMessage => 'أرسلت لك رسالة';
 
   @override
-  String get pushNotification => 'دفع الإخطار';
+  String get pushNotification => 'الاشعارات الفورية';
 
   @override
   String get yourBooking => 'طلبك';
