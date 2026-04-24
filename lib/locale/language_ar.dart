@@ -1167,7 +1167,7 @@ class LanguageAr extends BaseLanguage {
   String get walletBalance => 'رصيد المحفظة';
 
   @override
-  String get payAdvance => 'دفع تقدم';
+  String get payAdvance => 'دفع متقدم';
 
   @override
   String get advancePaymentMessage => 'قم بعمل دفعة مسبقة لإكمال الطلب';
